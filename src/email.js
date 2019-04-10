@@ -49,10 +49,10 @@ export const generate = () => {
           </MjmlColumn>
         </MjmlSection>
         <MjmlSection>
-          <MjmlColumn cssClass="blue-column">
+          <MjmlColumn cssClass="violet">
             <MjmlText>I am blue</MjmlText>
           </MjmlColumn>
-          <MjmlColumn cssClass="red-column">
+          <MjmlColumn cssClass="orange">
             <MjmlText>I am red</MjmlText>
           </MjmlColumn>
         </MjmlSection>
