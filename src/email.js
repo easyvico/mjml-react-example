@@ -50,10 +50,22 @@ export const generate = () => {
         </MjmlSection>
         <MjmlSection>
           <MjmlColumn cssClass="violet">
-            <MjmlText>I am blue</MjmlText>
+            <MjmlText>I am purple</MjmlText>
           </MjmlColumn>
           <MjmlColumn cssClass="orange">
-            <MjmlText>I am red</MjmlText>
+            <MjmlText>I am orange</MjmlText>
+          </MjmlColumn>
+        </MjmlSection>
+        <MjmlSection>
+          <MjmlColumn cssClass="orange">
+            <MjmlText align='center'>
+              <h1 style={{textTransform:'uppercase'}}>templates</h1>
+              <ul>
+                <li>
+                  <a href="./templates/email1.js">Email 1</a>
+                </li>
+              </ul>
+            </MjmlText>
           </MjmlColumn>
         </MjmlSection>
       </MjmlBody>
