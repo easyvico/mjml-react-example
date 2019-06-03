@@ -21,8 +21,8 @@ export const Argument = (props) => ([
     <MjmlText font-size='18px' align='center' text-transform='uppercase' paddingTop='20px'>
       <a href='#' style={{color: 'inherit', textDecoration:'none'}}>{props.titre}</a>
     </MjmlText>
-    <MjmlText cssClass='tiret'>
-      <p style={{width:'35px', margin:'10px auto'}}></p>
+    <MjmlText backgroundColor={props.tiret}>
+      <p style={{borderTop:'3px solid orange', width:'35px', margin:'10px auto'}}></p>
     </MjmlText>
     <MjmlText align='center' padding='10px 10px 20px 10px' cssClass='text-contenu'>
       <a href='#' style={{color: 'inherit', textDecoration:'none'}}>{props.contenu}</a>

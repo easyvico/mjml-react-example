@@ -23,9 +23,9 @@ export class Header extends Component {
           </MjmlText>
         </MjmlColumn>
       </MjmlSection>,
-      <MjmlSection key="second" padding='10px 0px' backgroundColor="#ede9e2">
+      <MjmlSection key="second" padding='0px 0px' backgroundColor="#ffffff">
         <MjmlColumn>
-          <MjmlImage src='http://fakeimg.pl/60x60/' alt='logo' width={60} />
+          <MjmlImage src='https://imgshare.io/images/2019/05/21/logo_signals_anim2.gif' alt='logo' width={220} />
         </MjmlColumn>
       </MjmlSection>
     ]);
