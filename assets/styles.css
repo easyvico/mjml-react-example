@@ -1,14 +1,12 @@
-.backOrangecolorFire {
+.backOrangeTextFire p:last-child {
   background: orange;
   color: firebrick;
 }
 
-.violet {
-  background: violet;
+.tiret p:last-child {
+  border-top: 3px solid red; 
 }
 
-.tiret {
-  border-top:'3px solid red'; 
-  width:'100px'; 
-  margin:'10px auto';
+.violet {
+  background: violet;
 }

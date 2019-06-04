@@ -71,7 +71,7 @@ export const generate = () => {
         <Visuel />//#endRegion
 
         //#region [Section3]
-        <Accroche style={style} titre='Titre de la email' bouton='Titre bouton'/>//#endRegion
+        <Accroche style={style} titre='Titre de la email' text='Test couleur avec du css' bouton='Titre bouton'/>//#endRegion
 
         //#region [Section4]
         <MjmlWrapper padding='20px' backgroundColor='#ede9e2'>
