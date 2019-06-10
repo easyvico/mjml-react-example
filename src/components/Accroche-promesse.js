@@ -22,7 +22,7 @@ export const Accroche = (props) => ([
       </MjmlText>
       <MjmlText cssClass="backOrangeTextFire tiret">
         <p style={{color:props.style.colorTest}}>test couleur text props</p>
-        <p>Tout le style de ce paragraphe est du css</p>
+        <p>Tout les style de ce paragraphe sont du css</p>
       </MjmlText>
       <MjmlButton font-size='15px' backgroundColor="#74a31c" paddingTop='20px' borderRadius='0' width='200' lineHeight='1.5' text-transform='uppercase'>{props.bouton}</MjmlButton>
     </MjmlColumn>
