@@ -1,5 +1,5 @@
 import React from 'react';
-import { readFileSync } from 'fs';
+//import { readFileSync } from 'fs';
 
 import {
   Mjml,
@@ -21,6 +21,7 @@ import {
 } from 'mjml-react';
 
 import { Header } from '../components/Header';
+import { Head } from '../components/Head';
 import { Visuel } from '../components/Visuel';
 import { Argument } from '../components/Argument';
 import { Accroche } from '../components/Accroche-promesse';
@@ -29,31 +30,21 @@ import { Cta } from '../components/Cta';
 import { Footer } from '../components/Footer';
 import { Mentions } from '../components/Mentions';
 
-const css = readFileSync('./assets/styles.css').toString();
+//const css = readFileSync('./assets/styles.css').toString();
+const style = {
+  tiret: {
+    borderTop:'3px solid olive', 
+    width:'100px', 
+    margin:'10px auto'
+  },
+  colorTest: '#61daff'
+};
 
 export const generate = () => {
   return (
     <Mjml>
-      <MjmlHead>
-        <MjmlTitle>Last Minute</MjmlTitle>
-        <MjmlPreview>Last Minute Offer...</MjmlPreview>
-        {/* <MjmlStyle inline>{`
-          .text-contenu div {
-            color: #666666 !important;
-          }
-          .tiret p {
-            border-top: 3px solid #0F2056 !important;
-          }
-
-        `}</MjmlStyle> */}
-        <MjmlStyle>{css}</MjmlStyle>
-        <MjmlAttributes>
-          <MjmlClass name="tiret" color="green" />
-          <MjmlSection padding='0' backgroundColor=''></MjmlSection>
-          <MjmlImage border='none' padding='0'/>
-          <MjmlText font-size='15px' font-family='arial' padding='0' line-height='1.1'/>
-        </MjmlAttributes>
-      </MjmlHead>
+      //#region [Section2]
+      <Head />//#endRegion
 
       <MjmlBody width={640}>
         //#region [Section1]
@@ -63,7 +54,7 @@ export const generate = () => {
         <Visuel />//#endRegion
 
         //#region [Section3]
-        <Accroche couleur='#0F2056' titre='Titre de la newsletter' bouton='Titre bouton'/>//#endRegion
+        <Accroche style={style} couleur='#0F2056' titre='Titre de la newsletter' bouton='Titre bouton'/>//#endRegion
 
         //#region [Section2]
         <MjmlWrapper padding='20px' backgroundColor='#ede9e2'>
