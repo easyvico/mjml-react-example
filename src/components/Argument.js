@@ -36,8 +36,13 @@ export const Argument = (props) => ([
     <MjmlText align='center' text-transform='uppercase' paddingTop='20px'>
       <a href='#' style={{color: 'inherit', textDecoration:'none'}}>{props.titre}</a>
     </MjmlText>
+<<<<<<< HEAD
     <MjmlText cssClass='tiret'>
       <p style={{ borderTop: '3px solid blue', width:'35px', margin:'10px auto' }}></p>
+=======
+    <MjmlText backgroundColor={props.tiret}>
+      <p style={{borderTop:'3px solid orange', width:'35px', margin:'10px auto'}}></p>
+>>>>>>> b789491f7623b86dcf7ab1044ee5fe6a99202ec7
     </MjmlText>
     <MjmlText align='center' padding='10px 10px 20px 10px' cssClass='text-contenu'  fontSize='18px'>
       <a href='#' style={{color: 'inherit', textDecoration:'none'}}>{props.contenu}</a>

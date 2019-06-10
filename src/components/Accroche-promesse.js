@@ -17,7 +17,7 @@ import {
 export const Accroche = (props) => ([
   <MjmlSection key="first" padding='20px 0' backgroundColor="#ffffff">
     <MjmlColumn>
-      <MjmlText font-weight='bold' color={props.couleur} font-size='20px' align='center' text-transform='uppercase'>
+      <MjmlText font-weight='bold' color={props.style.colorTest} font-size='20px' align='center' text-transform='uppercase'>
         <a href='#' style={{color: 'inherit', textDecoration:'none'}}>{props.titre}</a>
       </MjmlText>
       <MjmlText cssClass="backOrangeTextFire tiret">

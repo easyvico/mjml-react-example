@@ -4,7 +4,11 @@
 }
 
 .tiret p:last-child {
+<<<<<<< HEAD
   border-top: 3px solid red;
+=======
+  border-top: 3px solid red; 
+>>>>>>> b789491f7623b86dcf7ab1044ee5fe6a99202ec7
 }
 
 .violet {
