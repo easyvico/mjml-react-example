@@ -11,6 +11,14 @@
   background: violet;
 }
 
+.buttonColor td {
+  background: #74a31c !important;
+}
+
+.text-hover:hover {
+  color: red !important;
+}
+
 /* Outlook */
 [owa] .mj-column-per-100 { width: 100% !important; }
 [owa] .mj-column-per-50 { width: 50% !important; }
