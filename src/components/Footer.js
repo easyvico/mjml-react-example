@@ -22,21 +22,33 @@ export const Footer = (props) => ([
 				<MjmlText padding='10px 8px' align='center' color='#ffffff' fontSize='11px' lineHeight='1.5'>
 					<a href='#' style={{color: 'inherit', textDecoration:'none'}}>societe.fr</a>
 				</MjmlText>
+        <MjmlText>
+          {/* texte fictif pour lalignement des colonnes */}
+        </MjmlText>
 			</MjmlColumn>
 			<MjmlColumn width='25%' borderRight='1px solid #ffffff'>
 				<MjmlText padding='10px 8px' align='center' color='#ffffff' fontSize='11px' lineHeight='1.5'>
 					<a href='#' style={{color: 'inherit', textDecoration:'none'}}>Entreprise</a>
 				</MjmlText>
+        <MjmlText>
+          {/* texte fictif pour lalignement des colonnes */}
+        </MjmlText>
 			</MjmlColumn>
 			<MjmlColumn width='25%' borderRight='1px solid #ffffff'>
 				<MjmlText padding='10px 8px' align='center' color='#ffffff' fontSize='11px' lineHeight='1.5'>
 					<a href='#' style={{color: 'inherit', textDecoration:'none'}}>logo</a>
 				</MjmlText>
+        <MjmlText>
+          {/* texte fictif pour lalignement des colonnes */}
+        </MjmlText>
 			</MjmlColumn>
 			<MjmlColumn width='25%'>
 				<MjmlText padding='10px 8px' align='center' color='#ffffff' fontSize='11px' lineHeight='1.5'>
 					<a href='#' style={{color: 'inherit', textDecoration:'none'}}>Espace privé</a>
 				</MjmlText>
+        <MjmlText>
+          {/* texte fictif pour lalignement des colonnes */}
+        </MjmlText>
 			</MjmlColumn>
 		</MjmlGroup>
 	</MjmlSection>
