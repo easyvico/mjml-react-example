@@ -1,6 +1,8 @@
-.backOrangeTextFire p:last-child {
+.backOrangeTextGreen p:last-child {
   background: mediumvioletred;
   color: mediumseagreen;
+  font-family: Georgia,Times,Times New Roman,serif;
+  padding: 10px 0px;
 }
 
 .tiret p:last-child {

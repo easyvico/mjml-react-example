@@ -8,10 +8,7 @@ import {
   MjmlClass,
   MjmlTitle,
   MjmlPreview,
-  MjmlBody,
   MjmlSection,
-  MjmlColumn,
-  MjmlButton,
   MjmlImage,
   MjmlText,
   MjmlStyle
@@ -26,13 +23,12 @@ export const Head = () => ([
 
     {/* <MjmlStyle inline>{`
       .backOrangeTextFire p:last-child {
-  background: orange;
-  color: firebrick;
-}
-
-.tiret p:last-child {
-  border-top: 3px solid red; 
-}
+        background: orange;
+        color: firebrick;
+      }
+      .tiret p:last-child {
+        border-top: 3px solid red; 
+      }
       [owa] .mj-column-per-100 { width: 100% !important; }
       [owa] .mj-column-per-50 { width: 50% !important; }
       [owa] .mj-column-per-33 { width: 33.333% !important; }

@@ -2,16 +2,8 @@ import React, { Component } from 'react';
 
 import {
   Mjml,
-  MjmlHead,
-  MjmlTitle,
-  MjmlPreview,
-  MjmlBody,
   MjmlSection,
   MjmlColumn,
-  MjmlButton,
-  MjmlImage,
-  MjmlText,
-  MjmlStyle,
   MjmlNavbar,
   MjmlNavbarLink
 } from 'mjml-react';

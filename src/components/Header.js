@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
 import {
   Mjml,
-  MjmlHead,
-  MjmlTitle,
-  MjmlPreview,
-  MjmlBody,
   MjmlSection,
   MjmlColumn,
-  MjmlButton,
   MjmlImage,
-  MjmlText,
-  MjmlStyle
+  MjmlText
 } from 'mjml-react';
 
 export class Header extends Component {

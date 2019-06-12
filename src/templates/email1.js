@@ -2,25 +2,17 @@ import React from 'react';
 
 import {
   Mjml,
-  MjmlHead,
-  MjmlTitle,
-  MjmlPreview,
   MjmlBody,
   MjmlSection,
   MjmlColumn,
-  MjmlButton,
-  MjmlImage,
   MjmlText,
-  MjmlStyle,
-  MjmlAttributes,
   MjmlWrapper,
   MjmlDivider,
-  MjmlClass,
-  MjmlGroup
 } from 'mjml-react';
 
-import { Header } from '../components/Header';
 import { Head } from '../components/Head';
+import { Header } from '../components/Header';
+import { NavBar } from '../components/Navbar';
 import { Visuel } from '../components/Visuel';
 import { Argument } from '../components/Argument';
 import { Accroche } from '../components/Accroche-promesse';
@@ -48,6 +40,9 @@ export const generate = () => {
         //#region [Section1]
         <Header prenom='Laurent'/>//#endRegion
 
+        //#region [Section4]
+        <NavBar />//#endRegion
+
         //#region [Section2]
         <Visuel />//#endRegion
 
@@ -64,7 +59,7 @@ export const generate = () => {
           <MjmlDivider borderWidth='1px' borderColor='#eeeeee'></MjmlDivider>
           <CtaIntro couleur='#666666' titre='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'></CtaIntro>
           <MjmlSection backgroundColor='#ffffff' padding='0 20px 20px 20px'>
-            <MjmlColumn cssClass="violet">
+            <MjmlColumn>
               <Cta bouton='souscrire'></Cta>
             </MjmlColumn>
             <MjmlColumn>
