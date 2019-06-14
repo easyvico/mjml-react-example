@@ -67,6 +67,9 @@ export const generate = () => {
                 <li>
                   <a href="/2" style={{textDecoration:'none'}}>Email 2</a>
                 </li>
+                <li>
+                  <a href="/3" style={{textDecoration:'none'}}>Email 3</a>
+                </li>
               </ul>
             </MjmlText>
           </MjmlColumn>

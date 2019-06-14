@@ -5,3 +5,9 @@
 .violet {
   background: violet;
 }
+
+/* Outlook */
+[owa] .mj-column-per-100 { width: 100% !important; }
+[owa] .mj-column-per-50 { width: 50% !important; }
+[owa] .mj-column-per-33 { width: 33.333% !important; }
+
