@@ -17,14 +17,15 @@ import {
 export const Accroche = (props) => ([
   <MjmlSection key="first" padding='20px 0' backgroundColor="#ffffff">
     <MjmlColumn>
-      <MjmlText font-weight='bold' color={props.style.colorTest} font-size='20px' align='center' text-transform='uppercase'>
+      <MjmlText fontWeight='lighter' color={props.style.colorTest} fontSize='20px' align='center' textTransform='uppercase'>
         <a href='#' style={{color: 'inherit', textDecoration:'none'}}>{props.titre}</a>
       </MjmlText>
-      <MjmlText cssClass="backOrangeTextGreen tiret" font-size='18px'>
+      <MjmlText cssClass="backOrangeTextGreen tiret" fontSize='18px'>
         <p style={{color:props.style.colorTest}}>Test couleur de la couleur du text avec props.style.colorTest</p>
+        <p>Texte avec du Trebuchet SMAV</p>
         <p>Tout les style de ce paragraphe sont du css avec une font Georgia de 18 px et padding 10px</p>
       </MjmlText>
-      <MjmlButton font-size='15px' backgroundColor="#74a31c" paddingTop='20px' borderRadius='0' width='200' lineHeight='1.5' text-transform='uppercase'>{props.bouton}</MjmlButton>
+      <MjmlButton fontSize='15px' backgroundColor="#74a31c" paddingTop='20px' borderRadius='0' width='200' lineHeight='1.5' text-transform='uppercase'>{props.bouton}</MjmlButton>
     </MjmlColumn>
   </MjmlSection>
 ]);

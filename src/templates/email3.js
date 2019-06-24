@@ -31,7 +31,17 @@ import { Cta } from '../components/Cta';
 import { Footer } from '../components/Footer';
 import { Mentions } from '../components/Mentions';
 import { ArgumentVisuel } from '../components/Argument-visuel';
+import { BlocText } from '../components/BlocText';
 
+
+const style = {
+  tiret: {
+    borderTop:'3px solid olive', 
+    width:'100px', 
+    margin:'10px auto'
+  },
+  colorTest: '#61daff'
+};
 
 export const generate = () => {
   return (
@@ -46,6 +56,9 @@ export const generate = () => {
         //#region [Section4]
         <Visuel />//#endRegion
 
+        //#region [Section3]
+        <BlocText titre="Lightweight jackets mode" />//#endRegion
+
         <MjmlSection key="first" padding-top='15px' backgroundColor="#ffffff">
           <MjmlColumn>
             <MjmlCarousel>
@@ -57,7 +70,7 @@ export const generate = () => {
         </MjmlSection>
 
         //#region [Section3]
-        <Accroche couleur='#0F2056' titre='Titre de la newsletter' bouton='Titre bouton'/>//#endRegion
+        <Accroche style={style} couleur='#0F2056' titre='Titre de la newsletter' bouton='Titre bouton'/>//#endRegion
 
         <MjmlWrapper padding='20px' backgroundColor='#ede9e2'>
           <MjmlSection backgroundColor='#ffffff' padding='20px'>

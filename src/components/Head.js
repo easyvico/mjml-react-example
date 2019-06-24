@@ -11,28 +11,27 @@ import {
   MjmlSection,
   MjmlImage,
   MjmlText,
-  MjmlStyle
+  MjmlStyle,
+  MjmlFont
 } from 'mjml-react';
 
 const css = readFileSync('./assets/styles.css').toString();
 
 export const Head = () => ([
   <MjmlHead>
-    <MjmlTitle>Last Minute</MjmlTitle>
+    <MjmlTitle>Last Man</MjmlTitle>
     <MjmlPreview>Last Minute Offer...</MjmlPreview>
 
-    {/* <MjmlStyle inline>{`
-      .backOrangeTextFire p:last-child {
-        background: orange;
-        color: firebrick;
+    <MjmlStyle>{`
+      .padding-column div {
+        padding: 144px 20px !important;
       }
-      .tiret p:last-child {
-        border-top: 3px solid red; 
+      @media only screen and (max-width: 600px) {
+        .padding-column div {
+          padding: 20px 20px 5px 20px !important;
+        }
       }
-      [owa] .mj-column-per-100 { width: 100% !important; }
-      [owa] .mj-column-per-50 { width: 50% !important; }
-      [owa] .mj-column-per-33 { width: 33.333% !important; }
-    `}</MjmlStyle> */}
+    `}</MjmlStyle>
 
     <MjmlStyle inline>{css}</MjmlStyle>
 
@@ -41,7 +40,8 @@ export const Head = () => ([
       <MjmlClass name="tiret" color="green" />
       <MjmlSection padding='0' backgroundColor=''></MjmlSection>
       <MjmlImage border='none' padding='0'/>
-      <MjmlText font-size='35px' font-family='arial' padding='0' line-height='1.1'/>
+      <MjmlText font-size='35px' font-family='arial' padding='0' line-height='1.1' color='red'/>
+      {/* <MjmlFont name="Trebuchet" /> */}
     </MjmlAttributes>
   </MjmlHead>
 ]);

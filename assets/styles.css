@@ -1,8 +1,21 @@
+.font-trebuchet a, p {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .backOrangeTextGreen p:last-child {
   background: mediumvioletred;
   color: mediumseagreen;
   font-family: Georgia,Times,Times New Roman,serif;
   padding: 10px 0px;
+}
+.backOrangeTextGreen p:nth-of-type(2) {
+  background: orange;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
 .tiret p:last-child {
@@ -20,6 +33,9 @@
 .text-hover:hover {
   color: red !important;
 }
+
+/* Extra small devices (phones, 600px and down) */
+
 
 /* Outlook */
 [owa] .mj-column-per-100 { width: 100% !important; }
