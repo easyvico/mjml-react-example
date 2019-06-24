@@ -6,12 +6,12 @@ import {
   MjmlTitle,
   MjmlPreview,
   MjmlBody,
+  MjmlStyle,
   MjmlSection,
   MjmlColumn,
   MjmlButton,
   MjmlImage,
   MjmlText,
-  MjmlStyle,
   MjmlAttributes,
   MjmlWrapper,
   MjmlDivider,
@@ -57,7 +57,7 @@ export const generate = () => {
         <Visuel />//#endRegion
 
         //#region [Section3]
-        <BlocText titre="Lightweight jackets mode" />//#endRegion
+        <BlocText titre="Bill Murray oil painting" />//#endRegion
 
         <MjmlSection key="first" padding-top='15px' backgroundColor="#ffffff">
           <MjmlColumn>
