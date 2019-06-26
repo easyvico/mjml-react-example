@@ -18,7 +18,8 @@ import {
   MjmlClass,
   MjmlGroup,
   MjmlCarousel,
-  MjmlCarouselImage
+  MjmlCarouselImage,
+  MjmlNavbar
 } from 'mjml-react';
 
 import { Header } from '../components/Header';
@@ -32,6 +33,7 @@ import { Footer } from '../components/Footer';
 import { Mentions } from '../components/Mentions';
 import { ArgumentVisuel } from '../components/Argument-visuel';
 import { BlocText } from '../components/BlocText';
+import { NavBar } from '../components/Navbar';
 
 
 const style = {
@@ -49,15 +51,18 @@ export const generate = () => {
       //#region [Section2]
       <Head />//#endRegion
 
-      <MjmlBody width={640}>
+      <MjmlBody width={600}>
         //#region [Section1]
-        <Header prenom='Laurent'/>//#endRegion
+        {/* <Header prenom='Laurent'/>//#endRegion */}
+
+        //#region [Section4]
+        <NavBar />//#endRegion
 
         //#region [Section4]
         <Visuel />//#endRegion
 
         //#region [Section3]
-        <BlocText titre="Bill Murray oil painting" />//#endRegion
+        <BlocText titre="Bill Murray Groundhog Day" />//#endRegion
 
         <MjmlSection key="first" padding-top='15px' backgroundColor="#ffffff">
           <MjmlColumn>

@@ -17,17 +17,25 @@ import { Cta } from '../components/Cta';
 
 export const BlocText = (props) => ([
   <MjmlSection key="first" paddingTop='10px'>
-    <MjmlColumn backgroundColor="orange" padding='81px 20px'>
-      <MjmlText cssClass="font-trebuchet" fontWeight='lighter' align='center' textTransform='uppercase' letterSpacing='3px' lineHeight='1.3em'>
+    <MjmlColumn width='300px' backgroundColor="orange" padding='88px 20px'>
+      <MjmlText 
+        cssClass="font-trebuchet"
+        fontSize='27px'
+        fontWeight='lighter' 
+        align='center'
+        paddingBottom='10px'
+        textTransform='uppercase' 
+        letterSpacing='1.3px'
+        lineHeight='1.2em'>
         <a href='#' style={{color: '#ffffff', textDecoration:'none'}}>{props.titre}</a>
       </MjmlText>
-      <Cta bouton='Titre bouton' borderRadius='1' backgroundColor='none' />
+      <Cta bouton='En savoir plus' borderRadius='1' backgroundColor='none' width='185px' />
     </MjmlColumn>
-    <MjmlColumn>
+    <MjmlColumn width='300px'>
       {/* <MjmlText cssClass="font-trebuchet" fontWeight='lighter' fontSize='20px' align='center' textTransform='uppercase'>
         <a href='#' style={{color: 'inherit', textDecoration:'none'}}><img src='https://fillmurray.com/320/445' alt='picto' /></a>
       </MjmlText> */}
-      <MjmlImage fluid-on-mobile='true' height='320px' src="https://fillmurray.com/640/480" alt='jacket'/>
+      <MjmlImage fluid-on-mobile='true' height='320px' src="https://fillmurray.com/600/600" alt='jacket'/>
     </MjmlColumn>
   </MjmlSection>
 ]);

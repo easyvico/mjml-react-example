@@ -12,7 +12,8 @@ import {
   MjmlImage,
   MjmlText,
   MjmlStyle,
-  MjmlFont
+  MjmlFont,
+  MjmlColumn
 } from 'mjml-react';
 
 const css = readFileSync('./assets/styles.css').toString();
@@ -23,12 +24,21 @@ export const Head = () => ([
     <MjmlPreview>Last Minute Offer...</MjmlPreview>
 
     <MjmlStyle>{`
-      .padding-column div {
-        padding: 144px 20px !important;
+      .visible-mobile {
+        display: none !important;
+      }
+      .padding-column {
+        padding-left: 10px !important;
       }
       @media only screen and (max-width: 600px) {
-        .padding-column div {
-          padding: 20px 20px 5px 20px !important;
+        .padding-column {
+          padding-left: 0px !important;
+        }
+        .hidden-mobile {
+          display: none !important;
+        }
+        .visible-mobile {
+          display: block !important;
         }
       }
     `}</MjmlStyle>
@@ -41,6 +51,7 @@ export const Head = () => ([
       <MjmlSection padding='0' backgroundColor=''></MjmlSection>
       <MjmlImage border='none' padding='0'/>
       <MjmlText font-size='35px' font-family='arial' padding='0' line-height='1.1' color='red'/>
+      <MjmlColumn padding='0' />
       {/* <MjmlFont name="Trebuchet" /> */}
     </MjmlAttributes>
   </MjmlHead>

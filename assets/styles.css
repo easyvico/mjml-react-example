@@ -7,6 +7,11 @@ a {
   color: white;
 }
 
+/* align burger menu */
+.mj-menu-trigger {
+  /* text-align: right; */
+}
+
 .backOrangeTextGreen p:last-child {
   background: mediumvioletred;
   color: mediumseagreen;
