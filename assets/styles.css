@@ -1,6 +1,9 @@
 .font-trebuchet a, p {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
+.font-tahoma a, p {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
 
 a {
   text-decoration: none;
