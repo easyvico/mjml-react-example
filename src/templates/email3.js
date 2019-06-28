@@ -42,6 +42,11 @@ const style = {
     width:'100px', 
     margin:'10px auto'
   },
+  text: {
+    fontFamily: 'Verdana,Geneva,sans-serif',
+    fontSize: '55px',
+    color: '#61daff'
+  },
   colorTest: '#61daff'
 };
 
@@ -53,7 +58,7 @@ export const generate = () => {
 
       <MjmlBody width={600}>
         //#region [Section1]
-        {/* <Header prenom='Laurent'/>//#endRegion */}
+        <Header prenom='Laurent'/>//#endRegion
 
         //#region [Section4]
         <NavBar />//#endRegion
