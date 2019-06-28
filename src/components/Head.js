@@ -50,7 +50,7 @@ export const Head = () => ([
       <MjmlClass name="tiret" color="green" />
       <MjmlSection padding='0' backgroundColor=''></MjmlSection>
       <MjmlImage border='none' padding='0'/>
-      <MjmlText font-size='35px' font-family='arial' padding='0' line-height='1.1' color='red'/>
+      <MjmlText font-size='35px' font-family='arial' padding='0' line-height='1.1' color=''/>
       <MjmlColumn padding='0' />
       {/* <MjmlFont name="Trebuchet" /> */}
     </MjmlAttributes>

@@ -15,7 +15,7 @@ import {
 } from 'mjml-react';
 
 export const Cta = (props) => ([
-  <MjmlButton 
+  <MjmlButton
     font-size='15px' 
     backgroundColor='none'
     paddingBottom='15px' 

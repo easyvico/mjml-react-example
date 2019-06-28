@@ -11,19 +11,19 @@ import {
 } from 'mjml-react';
 
 export const NavBar = (props) => ([
-  <MjmlSection>
-    <MjmlColumn>
-      <MjmlImage src='https://imgshare.io/images/2019/06/25/Signals-La-Rochelle-anime.gif' alt='logo' width={120} />
+  <MjmlSection paddingTop={10}>
+    <MjmlColumn width='30%'>
+      <MjmlImage src='https://imgshare.io/images/2019/06/25/Signals-La-Rochelle-anime.gif' alt='logo' width={220} />
     </MjmlColumn>
-    <MjmlColumn>
-      <MjmlNavbar base-url="https://mjmlml.io" hamburger="hamburger" ico-color="red" icoPadding={0}>
-        <MjmlNavbarLink cssClass="text-hover" href="/gettings-started-onboard" color="#cccccc" lineHeight={5}>Getting started</MjmlNavbarLink>
-        <MjmlNavbarLink href="/try-it-live" color="#cccccc" lineHeight={5}>Try it live</MjmlNavbarLink>
-        <MjmlNavbarLink href="/templates" color="#cccccc" lineHeight={5}>Templates</MjmlNavbarLink>
-        <MjmlNavbarLink href="/components" color="#cccccc" lineHeight={5}>Components</MjmlNavbarLink>
-        <MjmlNavbarLink href="/try-it-live" color="#cccccc" lineHeight={5}>Try it live</MjmlNavbarLink>
-        <MjmlNavbarLink href="/templates" color="#cccccc" lineHeight={5}>Templates</MjmlNavbarLink>
-        <MjmlNavbarLink href="/components" color="#cccccc" lineHeight={5}>Components</MjmlNavbarLink>
+    <MjmlColumn verticalAlign='bottom' width='70%'>
+      <MjmlNavbar base-url="https://mjmlml.io" hamburger="hamburger" ico-color="orange" icoPadding='5px'>
+        <MjmlNavbarLink cssClass="text-hover" href="/gettings-started-onboard" color="#cccccc" lineHeight={5} padding={10}>Getting started</MjmlNavbarLink>
+        <MjmlNavbarLink href="/try-it-live" color="#cccccc" lineHeight={5} padding={10}>Try it live</MjmlNavbarLink>
+        <MjmlNavbarLink href="/templates" color="#cccccc" lineHeight={5} padding={10}>Templates</MjmlNavbarLink>
+        <MjmlNavbarLink href="/components" color="#cccccc" lineHeight={5} padding={10}>Components</MjmlNavbarLink>
+        <MjmlNavbarLink href="/try-it-live" color="#cccccc" lineHeight={5} padding={10}>Try it live</MjmlNavbarLink>
+        <MjmlNavbarLink href="/templates" color="#cccccc" lineHeight={5} padding={10}>Templates</MjmlNavbarLink>
+        <MjmlNavbarLink href="/components" color="#cccccc" lineHeight={5} padding={10}>Components</MjmlNavbarLink>
       </MjmlNavbar>
     </MjmlColumn>
 
