@@ -21,9 +21,10 @@ export const Accroche = (props) => ([
         <a href='#' style={{color: 'inherit', textDecoration:'none'}}>{props.titre}</a>
       </MjmlText>
       <MjmlText cssClass="backOrangeTextGreen tiret" fontSize='18px'>
-        <p style={{color:props.style.text.font}}>Test avec de la couleur rouge du text en 55px avec props.style.text et Verdana</p>
+        <p style={props.style.text}>Test avec de la couleur mediumvioletred du text en 40px avec props.style.text et Verdana</p>
         <p style={{color:props.style.colorTest}}>Test couleur de la couleur du text avec props.style.colorTest</p>
-        <p>Texte avec du Trebuchet SMAV</p>
+        <p className='font-trebuchet'>Texte avec du Trebuchet en css SMAVIO</p>
+        <p className='font-tahoma'>Texte avec du Tahoma en css SMAVIO</p>
         <p>Tout les style de ce paragraphe sont du css avec une font Georgia de 18 px et padding 10px</p>
       </MjmlText>
       <MjmlButton fontSize='15px' backgroundColor="#74a31c" paddingTop='20px' borderRadius='0' width='200' lineHeight='1.5' text-transform='uppercase'>{props.bouton}</MjmlButton>

@@ -18,7 +18,7 @@ export const NavBar = (props) => ([
     <MjmlColumn verticalAlign='bottom' width='70%'>
       <MjmlNavbar base-url="https://mjmlml.io" hamburger="hamburger" ico-color="orange" icoPadding='5px'>
         <MjmlNavbarLink cssClass="text-hover" href="/gettings-started-onboard" color="#cccccc" lineHeight={5} padding={10}>Getting started</MjmlNavbarLink>
-        <MjmlNavbarLink href="/try-it-live" color="#cccccc" lineHeight={5} padding={10}>Try it live</MjmlNavbarLink>
+        <MjmlNavbarLink href="/try-it-live" color="#cccccc" lineHeight={5} padding={10}>Try it live ok2</MjmlNavbarLink>
         <MjmlNavbarLink href="/templates" color="#cccccc" lineHeight={5} padding={10}>Templates</MjmlNavbarLink>
         <MjmlNavbarLink href="/components" color="#cccccc" lineHeight={5} padding={10}>Components</MjmlNavbarLink>
         <MjmlNavbarLink href="/try-it-live" color="#cccccc" lineHeight={5} padding={10}>Try it live</MjmlNavbarLink>

@@ -44,8 +44,8 @@ const style = {
   },
   text: {
     fontFamily: 'Verdana,Geneva,sans-serif',
-    fontSize: '55px',
-    color: '#61daff'
+    fontSize: '40px',
+    color: 'mediumvioletred'
   },
   colorTest: '#61daff'
 };
