@@ -18,8 +18,7 @@ import { Cta } from '../components/Cta';
 export const BlocText = (props) => ([
   <MjmlSection key="first" paddingTop='10px'>
     <MjmlColumn width='300px' backgroundColor="orange" padding='88px 20px'>
-      <MjmlText 
-        cssClass="font-trebuchet"
+      <MjmlText
         fontSize='27px'
         fontWeight='lighter' 
         align='center'
@@ -27,7 +26,7 @@ export const BlocText = (props) => ([
         textTransform='uppercase' 
         letterSpacing='1.3px'
         lineHeight='1.2em'>
-        <a href='#' style={{color: '#ffffff', textDecoration:'none'}}>{props.titre}</a>
+        <a className="font-trebuchet" href='http://www.maif.fr' style={{color: '#ffffff', textDecoration:'none'}} alt='Titre article'>{props.titre}</a>
       </MjmlText>
       <Cta bouton='En savoir plus' borderRadius='1' backgroundColor='none' width='185px' />
     </MjmlColumn>

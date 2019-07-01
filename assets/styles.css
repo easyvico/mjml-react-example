@@ -1,7 +1,7 @@
-.font-trebuchet a, p {
-  /* font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; */
+.font-trebuchet {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
-.font-tahoma a, p {
+.font-tahoma {
   font-family: Tahoma, Verdana, Segoe, sans-serif;
 }
 
@@ -11,19 +11,15 @@ a {
 }
 
 /* align burger menu */
-.mj-menu-trigger {
-  /* text-align: right; */
-}
+/* .mj-menu-trigger {
+  text-align: right;
+} */
 
 .backOrangeTextGreen p:last-child {
-  background: mediumvioletred;
+  background: #c71585;
   color: mediumseagreen;
   font-family: Georgia,Times,Times New Roman,serif;
   padding: 10px 0px;
-}
-.backOrangeTextGreen p:nth-of-type(2) {
-  background: orange;
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
 .tiret p:last-child {
