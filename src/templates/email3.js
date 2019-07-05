@@ -52,11 +52,11 @@ const style = {
 
 export const generate = () => {
   return (
-    <Mjml>
+    <Mjml padding={20} backgroundColor='grey'>
       //#region [Section2]
       <Head />//#endRegion
 
-      <MjmlBody width={600}>
+      <MjmlBody width={640} backgroundColor='white'>
         //#region [Section1]
         <Header prenom='Laurent'/>//#endRegion
 

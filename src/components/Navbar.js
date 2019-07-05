@@ -15,15 +15,11 @@ export const NavBar = (props) => ([
     <MjmlColumn width='30%'>
       <MjmlImage src='https://imgshare.io/images/2019/06/25/Signals-La-Rochelle-anime.gif' alt='logo' width={220} />
     </MjmlColumn>
-    <MjmlColumn verticalAlign='bottom' width='70%'>
-      <MjmlNavbar base-url="https://mjmlml.io" hamburger="hamburger" ico-color="orange" icoPadding='5px'>
-        <MjmlNavbarLink cssClass="text-hover" href="/gettings-started-onboard" color="#cccccc" lineHeight={5} padding={10}>Getting started</MjmlNavbarLink>
-        <MjmlNavbarLink href="/try-it-live" color="#cccccc" lineHeight={5} padding={10}>Try it live ok2</MjmlNavbarLink>
-        <MjmlNavbarLink href="/templates" color="#cccccc" lineHeight={5} padding={10}>Templates</MjmlNavbarLink>
-        <MjmlNavbarLink href="/components" color="#cccccc" lineHeight={5} padding={10}>Components</MjmlNavbarLink>
-        <MjmlNavbarLink href="/try-it-live" color="#cccccc" lineHeight={5} padding={10}>Try it live</MjmlNavbarLink>
-        <MjmlNavbarLink href="/templates" color="#cccccc" lineHeight={5} padding={10}>Templates</MjmlNavbarLink>
-        <MjmlNavbarLink href="/components" color="#cccccc" lineHeight={5} padding={10}>Components</MjmlNavbarLink>
+    <MjmlColumn verticalAlign='bottom' textAlign='right' width='70%'>
+      <MjmlNavbar base-url="https://mjmlml.io" hamburger="none" ico-color="orange" icoPadding='5px'>
+        <MjmlNavbarLink cssClass="text-hover" textTransform='lowcase' padding={10} href="/gettings-started-onboard" color="#cccccc">Signalisation de sécurité</MjmlNavbarLink>
+        <MjmlNavbarLink cssClass="text-hover" textTransform='lowcase' padding={10} href="/templates" color="#cccccc">Protection du site</MjmlNavbarLink>
+        <MjmlNavbarLink cssClass="text-hover" textTransform='lowcase' padding={10} href="/components" color="#cccccc">Tous les produits</MjmlNavbarLink>
       </MjmlNavbar>
     </MjmlColumn>
 

@@ -12,8 +12,7 @@ export class Header extends Component {
     return ([
       <MjmlSection key="first" padding='10px 0px'>
         <MjmlColumn cssClass='blue-column'>
-          <MjmlText font-size='12px' color='#666666' align='center' padding='0'>{this.props.prenom} Si cet email ne s'affiche pas correctement, vous pouvez le visualiser gr&#226;ce &#225; ce
-            <a href='./email.html' style={{color: 'inherit'}}>> lien</a>
+          <MjmlText textDecoration='underline' font-size='12px' color='#666666' align='center' padding='0'><a href='./email.html' style={{color: 'inherit'}}>{this.props.prenom} lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</a>
           </MjmlText>
         </MjmlColumn>
       </MjmlSection>

@@ -43,8 +43,14 @@ export const Head = () => ([
         }
       }
       /* add border navbar link */
+      .mj-inline-links {
+        text-align: left;
+      }
       .mj-link {
+        font-size: 16px !important;
         border-right: 1px solid black;
+        max-width: 22%;
+        text-align: center;
       }
       @media only screen and (max-width: 480px){
         .mj-link {
@@ -60,7 +66,7 @@ export const Head = () => ([
       <MjmlClass name="tiret" color="green" />
       <MjmlSection padding='0' backgroundColor=''></MjmlSection>
       <MjmlImage border='none' padding='0'/>
-      <MjmlText font-size='35px' font-family='"Times New Roman", Times, serif' padding='0' line-height='1.1' color='#7115c7'/>
+      <MjmlText font-size='35px' font-family='"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif' padding='0' line-height='1.1' color='#7115c7'/>
       <MjmlColumn padding='0' />
       {/* <MjmlFont name="Trebuchet" /> */}
     </MjmlAttributes>
