@@ -25,38 +25,24 @@ export const Head = () => ([
     <MjmlPreview>Last Minute Offer...</MjmlPreview>
 
     <MjmlStyle>{`
-      .visible-mobile {
-        display: none !important;
-      }
-      .padding-column {
-        padding-left: 10px !important;
-      }
-      @media only screen and (max-width: 600px) {
-        .padding-column {
-          padding-left: 0px !important;
-        }
-        .hidden-mobile {
-          display: none !important;
-        }
-        .visible-mobile {
-          display: block !important;
+      @media only screen and (max-width: 480px) {
+        .nav-link {
+          max-width: 25% !important;
+          font-size: 14px !important;
         }
       }
-      /* add border navbar link */
-      .mj-inline-links {
-        text-align: left;
+
+      
+      {/* .align-right div {
+        text-align: right !important;
+        font-size: 14px !important;
       }
-      .mj-link {
-        font-size: 16px !important;
-        border-right: 1px solid black;
-        max-width: 22%;
-        text-align: center;
-      }
-      @media only screen and (max-width: 480px){
-        .mj-link {
-          border-right: none;
+      @media only screen and (max-width: 480px) {
+        .align-right div {
+          text-align: center !important;
+          font-size: 12px !important;
         }
-      }
+      } */}
     `}</MjmlStyle>
 
     <MjmlStyle inline>{css}</MjmlStyle>
@@ -67,7 +53,7 @@ export const Head = () => ([
       <MjmlSection padding='0' backgroundColor=''></MjmlSection>
       <MjmlImage border='none' padding='0'/>
       <MjmlText font-size='35px' font-family='"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif' padding='0' line-height='1.1' color='#7115c7'/>
-      <MjmlColumn padding='0' />
+      <MjmlColumn padding='0'/>
       {/* <MjmlFont name="Trebuchet" /> */}
     </MjmlAttributes>
   </MjmlHead>

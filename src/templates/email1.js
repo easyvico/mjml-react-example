@@ -12,7 +12,7 @@ import {
 
 import { Head } from '../components/Head';
 import { Header } from '../components/Header';
-import { NavBar } from '../components/Navbar';
+import { LogoNavBar } from '../components/LogoNavBar';
 import { Visuel } from '../components/Visuel';
 import { Argument } from '../components/Argument';
 import { Accroche } from '../components/Accroche-promesse';
@@ -41,7 +41,7 @@ export const generate = () => {
         <Header prenom='Laurent'/>//#endRegion
 
         //#region [Section4]
-        <NavBar />//#endRegion
+        <LogoNavBar />//#endRegion
 
         //#region [Section2]
         <Visuel />//#endRegion

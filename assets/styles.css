@@ -1,3 +1,19 @@
+/* add border navbar link */
+.mj-inline-links {
+  /* text-align: left; */
+}
+.nav-link {
+  font-weight: lighter !important;
+  max-width: 23%;
+  font-size: 15px !important;
+  border-right: 1px solid #707070;
+  text-align: center;
+  line-height: 17px !important;
+}
+.nav-link:last-child {
+  border-right: none;
+}
+
 .font-trebuchet {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
@@ -34,9 +50,9 @@ a {
   background: #74a31c !important;
 }
 
-.text-hover:hover {
+/* .nav-link:hover {
   color: red !important;
-}
+} */
 
 /* Extra small devices (phones, 600px and down) */
 

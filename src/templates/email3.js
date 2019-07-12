@@ -32,8 +32,9 @@ import { Cta } from '../components/Cta';
 import { Footer } from '../components/Footer';
 import { Mentions } from '../components/Mentions';
 import { ArgumentVisuel } from '../components/Argument-visuel';
-import { BlocText } from '../components/BlocText';
-import { NavBar } from '../components/Navbar';
+import { BlocTextImage} from '../components/BlocTextImage';
+import { LogoNavBar } from '../components/LogoNavBar';
+import { VisuelText } from '../components/VisuelText';
 
 
 const style = {
@@ -47,68 +48,63 @@ const style = {
     fontSize: '40px',
     color: 'mediumvioletred'
   },
-  colorTest: '#61daff'
+  color0: '#ffffff',
+  color1: '#3c4858',
+  color2: '#fd3d0e',
+  color3: '#F5F5F5'
 };
 
 export const generate = () => {
   return (
-    <Mjml padding={20} backgroundColor='grey'>
-      //#region [Section2]
-      <Head />//#endRegion
+    <Mjml>
+      <Head />
+      <MjmlBody width={640} backgroundColor={style.color3}>
+        <Header prenom='Laurent' color0={style.color0}/>
 
-      <MjmlBody width={640} backgroundColor='white'>
-        //#region [Section1]
-        <Header prenom='Laurent'/>//#endRegion
+        <LogoNavBar color0={style.color0}/>
 
-        //#region [Section4]
-        <NavBar />//#endRegion
+        <VisuelText color0={style.color0} />
 
-        //#region [Section4]
-        <Visuel />//#endRegion
+        <MjmlSection key="first" padding={10} backgroundColor={style.color0}>
+          <BlocTextImage
+            titre="Transport des matières dangereuse"
+            lien="> En savoir plus"
+            color1={style.color1}
+            color2={style.color2}
+            color3={style.color3}
+          />
+          <BlocTextImage
+            titre="Signalisation pour les véhicules"
+            lien="> En savoir plus"
+            color1={style.color1}
+            color2={style.color2}
+          />
+        </MjmlSection>
 
-        //#region [Section3]
-        <BlocText titre="Bill Murray Groundhog Day" />//#endRegion
+        <MjmlDivider borderWidth='1px' borderColor={style.color3} width='50%' padding='0px 20px' />
 
-        <MjmlSection key="first" padding-top='15px' backgroundColor="#ffffff">
+        <MjmlSection backgroundColor={style.color0} padding='20px'>
+          <Argument background='olive' tiret='#0F2056' titre='Lorem ipsum dolor sit amet' contenu='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'/>
+          <Argument background='yellow' titre='Lorem ipsum dolor sit amet' contenu='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'/>
+          <Argument background='pink' titre='Lorem ipsum dolor sit amet' contenu='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'/>
+        </MjmlSection>
+
+        <MjmlDivider borderWidth='1px' borderColor='#eeeeee'></MjmlDivider>
+
+        <CtaIntro couleur='#666666' titre='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'></CtaIntro>
+        {/* Les 2 CTA */}
+        <MjmlSection backgroundColor='#ffffff' padding='0 20px 20px 20px'>
           <MjmlColumn>
-            <MjmlCarousel>
-              <MjmlCarouselImage thumbnailsSrc='' src="https://www.mailjet.com/wp-content/uploads/2016/11/ecommerce-guide.jpg" />
-              <MjmlCarouselImage src="https://www.mailjet.com/wp-content/uploads/2016/09/3@1x.png" />
-              <MjmlCarouselImage src="https://www.mailjet.com/wp-content/uploads/2016/09/1@1x.png" />
-            </MjmlCarousel>
+            <Cta bouton='souscrire'></Cta>
+          </MjmlColumn>
+          <MjmlColumn>
+            <Cta bouton='prendre rdv'></Cta>
           </MjmlColumn>
         </MjmlSection>
 
-        //#region [Section3]
-        <Accroche style={style} couleur='#0F2056' titre='Titre de la newsletter' bouton='Titre bouton'/>//#endRegion
+        //#region [Section4]
+        <ArgumentVisuel />#endRegion
 
-        <MjmlWrapper padding='20px' backgroundColor='#ede9e2'>
-          <MjmlSection backgroundColor='#ffffff' padding='20px'>
-
-            //#region [Section2]
-            <Argument background='olive' tiret='#0F2056' titre='Lorem ipsum dolor sit amet' contenu='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'/>
-            <Argument background='yellow' titre='Lorem ipsum dolor sit amet' contenu='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'/>
-            <Argument background='pink' titre='Lorem ipsum dolor sit amet' contenu='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'/>//#endRegion
-
-          </MjmlSection>
-          <MjmlDivider borderWidth='1px' borderColor='#eeeeee'></MjmlDivider>
-
-          //#region [Section1]
-          <CtaIntro couleur='#666666' titre='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'></CtaIntro>#endRegion
-          {/* Les 2 CTA */}
-          <MjmlSection backgroundColor='#ffffff' padding='0 20px 20px 20px'>
-            <MjmlColumn>
-              <Cta bouton='souscrire'></Cta>
-            </MjmlColumn>
-            <MjmlColumn>
-              <Cta bouton='prendre rdv'></Cta>
-            </MjmlColumn>
-          </MjmlSection>
-
-          //#region [Section4]
-          <ArgumentVisuel />#endRegion
-
-        </MjmlWrapper>
         <Footer />
         <Mentions />
       </MjmlBody>

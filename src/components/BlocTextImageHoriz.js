@@ -13,9 +13,9 @@ import {
   MjmlText
 } from 'mjml-react';
 
-import { Cta } from '../components/Cta';
+import { Cta } from './Cta';
 
-export const BlocText = (props) => ([
+export const BlocTextImageHoriz = (props) => ([
   <MjmlSection key="first" paddingTop='10px'>
     <MjmlColumn width='300px' backgroundColor="orange" padding='88px 20px'>
       <MjmlText
@@ -34,7 +34,7 @@ export const BlocText = (props) => ([
       {/* <MjmlText cssClass="font-trebuchet" fontWeight='lighter' fontSize='20px' align='center' textTransform='uppercase'>
         <a href='#' style={{color: 'inherit', textDecoration:'none'}}><img src='https://fillmurray.com/320/445' alt='picto' /></a>
       </MjmlText> */}
-      <MjmlImage fluid-on-mobile='true' height='320px' src="https://fillmurray.com/600/600" alt='jacket'/>
+      <MjmlImage fluid-on-mobile='true' height='320px' src="https://picsum.photos/600" alt='image'/>
     </MjmlColumn>
   </MjmlSection>
 ]);
