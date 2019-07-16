@@ -32,9 +32,12 @@ import { Cta } from '../components/Cta';
 import { Footer } from '../components/Footer';
 import { Mentions } from '../components/Mentions';
 import { ArgumentVisuel } from '../components/Argument-visuel';
-import { BlocTextImage} from '../components/BlocTextImage';
+import { BlocImageText} from '../components/BlocImageTexte';
 import { LogoNavBar } from '../components/LogoNavBar';
 import { VisuelText } from '../components/VisuelText';
+import { TextIntro } from '../components/TextIntro';
+import { Divider } from '../components/Divider';
+
 
 
 const style = {
@@ -51,7 +54,9 @@ const style = {
   color0: '#ffffff',
   color1: '#3c4858',
   color2: '#fd3d0e',
-  color3: '#F5F5F5'
+  color3: '#F5F5F5',
+  color4: '#004990',
+  color5: '#cccccc'
 };
 
 export const generate = () => {
@@ -63,17 +68,32 @@ export const generate = () => {
 
         <LogoNavBar color0={style.color0}/>
 
-        <VisuelText color0={style.color0} />
+        <VisuelText 
+          color0={style.color0}
+        />
 
-        <MjmlSection key="first" padding={10} backgroundColor={style.color0}>
-          <BlocTextImage
+        <TextIntro
+          background0={style.color0}
+          padding='20px 20px 10px'
+          texte='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.'
+        />
+
+        <Divider
+          padding='0px 20px 10px'
+          padding0='0px'
+          border={style.color5}
+          background0={style.color0}
+        />
+
+        <MjmlSection key="first" padding='0 10px' backgroundColor={style.color0}>
+          <BlocImageText
             titre="Transport des matières dangereuse"
             lien="> En savoir plus"
             color1={style.color1}
             color2={style.color2}
             color3={style.color3}
           />
-          <BlocTextImage
+          <BlocImageText
             titre="Signalisation pour les véhicules"
             lien="> En savoir plus"
             color1={style.color1}
@@ -81,12 +101,40 @@ export const generate = () => {
           />
         </MjmlSection>
 
-        <MjmlDivider borderWidth='1px' borderColor={style.color3} width='50%' padding='0px 20px' />
+        <MjmlSection key="first" padding='0 10px' backgroundColor={style.color0}>
+          <BlocImageText
+            titre="&Eacute;quipements pour véhicules"
+            lien="> En savoir plus"
+            color1={style.color1}
+            color2={style.color2}
+            color3={style.color3}
+          />
+          <BlocImageText
+            titre="Emballage"
+            lien="> En savoir plus"
+            color1={style.color1}
+            color2={style.color2}
+          />
+        </MjmlSection>
+
+        <Divider 
+          border={style.color4}
+          background0={style.color0}
+        />
 
         <MjmlSection backgroundColor={style.color0} padding='20px'>
-          <Argument background='olive' tiret='#0F2056' titre='Lorem ipsum dolor sit amet' contenu='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'/>
-          <Argument background='yellow' titre='Lorem ipsum dolor sit amet' contenu='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'/>
-          <Argument background='pink' titre='Lorem ipsum dolor sit amet' contenu='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'/>
+          <Argument 
+            background='olive' 
+            tiret='#0F2056' titre='Lorem ipsum dolor sit amet' 
+            contenu='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'/>
+          <Argument 
+            background='yellow' 
+            titre='Lorem ipsum dolor sit amet' 
+            contenu='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'/>
+          <Argument 
+            background='pink' 
+            titre='Lorem ipsum dolor sit amet' 
+            contenu='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'/>
         </MjmlSection>
 
         <MjmlDivider borderWidth='1px' borderColor='#eeeeee'></MjmlDivider>

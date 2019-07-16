@@ -31,7 +31,6 @@ export const Head = () => ([
           font-size: 14px !important;
         }
       }
-
       
       {/* .align-right div {
         text-align: right !important;
@@ -52,7 +51,13 @@ export const Head = () => ([
       <MjmlClass name="tiret" color="green" />
       <MjmlSection padding='0' backgroundColor=''></MjmlSection>
       <MjmlImage border='none' padding='0'/>
-      <MjmlText font-size='35px' font-family='"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif' padding='0' line-height='1.1' color='#7115c7'/>
+      <MjmlText 
+        font-size='35px'
+        font-family='"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif'
+        padding='0'
+        line-height='1.1'
+        color='#3c4858'
+      />
       <MjmlColumn padding='0'/>
       {/* <MjmlFont name="Trebuchet" /> */}
     </MjmlAttributes>

@@ -15,22 +15,22 @@ import {
 
 import { Cta } from './Cta';
 
-export const BlocTextImage = (props) => ([
+export const BlocImageText = (props) => ([
     <MjmlColumn backgroundColor="#ffffff" padding={10}>
-      <MjmlImage fluid-on-mobile='true' width={290} src="https://picsum.photos/290" alt='image'/>
+      <MjmlImage fluid-on-mobile='true' width={290} src="https://picsum.photos/290" alt='image' href="https://mjml.io"/>
       <MjmlText
         color={props.color1}
         fontSize='20px'
         fontWeight='lighter' 
-        paddingBottom='10px'
         letterSpacing='1px'
         paddingTop={10}
+        paddingBottom={5}
         lineHeight='1em'>
         <a className="font-trebuchet" href='http://www.maif.fr' style={{color: 'inherit', textDecoration:'none'}} alt='Titre article'>{props.titre}</a>
       </MjmlText>
-      <MjmlText 
+      <MjmlText
         color={props.color2}
-        font-size='18px'
+        font-size='30px'
         font-weight='bold'>
         <a href='#' style={{color: 'inherit', textDecoration:'none'}}>{props.lien}</a>
       </MjmlText>
