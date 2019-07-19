@@ -21,14 +21,17 @@ const css = readFileSync('./assets/styles.css').toString();
 
 export const Head = () => ([
   <MjmlHead>
-    <MjmlTitle>Last Man</MjmlTitle>
-    <MjmlPreview>Last Minute Offer...</MjmlPreview>
+    <MjmlTitle>Signals</MjmlTitle>
+    <MjmlPreview>Découvrez les catégories</MjmlPreview>
 
     <MjmlStyle>{`
       @media only screen and (max-width: 480px) {
         .nav-link {
           max-width: 25% !important;
           font-size: 14px !important;
+        }
+        .nav-link:first-child {
+          max-width: 27% !important;
         }
       }
       
@@ -49,17 +52,26 @@ export const Head = () => ([
     <MjmlAttributes>
       <Mjml owa="desktop"></Mjml>
       <MjmlClass name="tiret" color="green" />
+      {/* classe visant directement le <a> du bouton */}
+      <MjmlClass 
+        name="button"
+        font-family='"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif'
+        textDecoration='none'
+      />
       <MjmlSection padding='0' backgroundColor=''></MjmlSection>
       <MjmlImage border='none' padding='0'/>
       <MjmlText 
-        font-size='35px'
+        font-size='20px'
         font-family='"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif'
         padding='0'
         line-height='1.1'
         color='#3c4858'
       />
+      {/* <MjmlButton 
+        font-family='"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif'
+        fontWeight='bold'
+        /> */}
       <MjmlColumn padding='0'/>
-      {/* <MjmlFont name="Trebuchet" /> */}
     </MjmlAttributes>
   </MjmlHead>
 ]);

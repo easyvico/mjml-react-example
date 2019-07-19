@@ -13,7 +13,7 @@ import {
 
 export const Divider = (props) => ([
   <MjmlSection
-    backgroundColor={props.background0}
+    backgroundColor={props.background}
     padding={props.padding}
   >
     <MjmlColumn>

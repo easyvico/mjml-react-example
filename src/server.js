@@ -4,7 +4,8 @@ import {render} from 'mjml-react';
 import * as home from '.';
 import * as email1 from './templates/email1';
 import * as email2 from './templates/email2';
-import * as email3 from './templates/email3';
+import * as emailCat from './templates/email-cat';
+import * as emailProduits from './templates/email-3produits';
 
 const port = 3000;
 const app = express();
@@ -20,7 +21,12 @@ app.get('/2', (req, res) => {
 });
 
 app.get('/3', (req, res) => {
-  const {html} = render(email3.generate(), {validationLevel: 'soft'});
+  const {html} = render(emailCat.generate(), {validationLevel: 'soft'});
+  res.send(html);
+});
+
+app.get('/4', (req, res) => {
+  const {html} = render(emailProduits.generate(), {validationLevel: 'soft'});
   res.send(html);
 });
 

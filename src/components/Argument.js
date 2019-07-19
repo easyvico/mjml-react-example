@@ -32,7 +32,7 @@ export const Argument = (props) => ([
   // </MjmlColumn>
 
   <MjmlColumn backgroundColor={props.background}>
-    <MjmlImage href='#' src='https://picsum.photos/80' alt='image' align='center' width='80' />
+    <MjmlImage href='http://www.google.fr' src='https://imgshare.io/images/2019/07/16/ico-creditcard.png' alt='image' align='center' width='64' />
     <MjmlText align='center' text-transform='uppercase' paddingTop='20px'>
       <a href='#' style={{color: 'inherit', textDecoration:'none'}}>{props.titre}</a>
     </MjmlText>

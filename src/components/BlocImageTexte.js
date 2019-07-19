@@ -16,7 +16,7 @@ import {
 import { Cta } from './Cta';
 
 export const BlocImageText = (props) => ([
-    <MjmlColumn backgroundColor="#ffffff" padding={10}>
+    <MjmlColumn backgroundColor={props.color} padding={10}>
       <MjmlImage fluid-on-mobile='true' width={290} src="https://picsum.photos/290" alt='image' href="https://mjml.io"/>
       <MjmlText
         color={props.color1}
@@ -30,7 +30,7 @@ export const BlocImageText = (props) => ([
       </MjmlText>
       <MjmlText
         color={props.color2}
-        font-size='30px'
+        font-size='18px'
         font-weight='bold'>
         <a href='#' style={{color: 'inherit', textDecoration:'none'}}>{props.lien}</a>
       </MjmlText>

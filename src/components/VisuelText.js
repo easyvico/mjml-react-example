@@ -22,7 +22,15 @@ export const VisuelText = (props) => ([
     backgroundHeight="320px"
     backgroundUrl="https://imgshare.io/images/2019/07/12/fotolia-176119722-subscription-monthly-m.jpg"
     padding="150px 0px"
-    width="100%">
-    <MjmlText align='center' color={props.color0}>Test</MjmlText>
+    width="100%"
+  >
+    <MjmlText
+      fontSize={35}
+      align='center'
+      color={props.color}
+      textTransform='uppercase'
+      letterSpacing={8}>
+      sécurité en transport
+    </MjmlText>
   </MjmlHero>
 ]);

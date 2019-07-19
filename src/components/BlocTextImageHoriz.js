@@ -13,28 +13,43 @@ import {
   MjmlText
 } from 'mjml-react';
 
+import { TextIntro } from './TextIntro';
 import { Cta } from './Cta';
 
 export const BlocTextImageHoriz = (props) => ([
-  <MjmlSection key="first" paddingTop='10px'>
-    <MjmlColumn width='300px' backgroundColor="orange" padding='88px 20px'>
-      <MjmlText
-        fontSize='27px'
-        fontWeight='lighter' 
-        align='center'
-        paddingBottom='10px'
-        textTransform='uppercase' 
-        letterSpacing='1.3px'
-        lineHeight='1.2em'>
-        <a className="font-trebuchet" href='http://www.maif.fr' style={{color: '#ffffff', textDecoration:'none'}} alt='Titre article'>{props.titre}</a>
-      </MjmlText>
-      <Cta bouton='En savoir plus' borderRadius='1' backgroundColor='none' width='185px' />
+  <MjmlSection key="first" backgroundColor={props.color} padding='0 10px 10px 10px' direction={props.direction}>
+    <MjmlColumn padding={10} >
+      <MjmlImage fluid-on-mobile='true' width={290} src="https://picsum.photos/400" alt='image'/>
     </MjmlColumn>
-    <MjmlColumn width='300px'>
-      {/* <MjmlText cssClass="font-trebuchet" fontWeight='lighter' fontSize='20px' align='center' textTransform='uppercase'>
-        <a href='#' style={{color: 'inherit', textDecoration:'none'}}><img src='https://fillmurray.com/320/445' alt='picto' /></a>
-      </MjmlText> */}
-      <MjmlImage fluid-on-mobile='true' height='320px' src="https://picsum.photos/600" alt='image'/>
+    <MjmlColumn padding={10}>
+      <MjmlText
+        color={props.color1}
+        fontSize='23px'
+        fontWeight='lighter' 
+        letterSpacing='1px'
+        textTransform='uppercase'
+        paddingBottom={5}
+        lineHeight='1em'>
+        <a className="font-trebuchet" href='http://www.google.fr' style={{color: 'inherit', textDecoration:'none'}} alt='Titre article'>{props.titre}</a>
+      </MjmlText>
+      <MjmlText padding='15px 0'>
+        <img href={props.lien} src={props.picto} alt='picto loupe' style={{paddingRight:'15px', width:'25px'}}/>
+        <span style={props.verdana}>Nouveau</span>
+      </MjmlText>
+      <TextIntro
+        fontsize='20px'
+        texte={props.texte}
+        align='left'
+        height='125px'
+      />
+      <Cta 
+        lien='http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV1wVE5p8bdPE91adlnlY84XDYsxLywEjDBdg7UYGPg_Xm&c=7EKibOF-ZZHjknNbHOXuxA'
+        text='voir le produit'
+        borderRadius='1'
+        backgroundColor='none'
+        padding={0}
+        width='100%'
+      />
     </MjmlColumn>
   </MjmlSection>
 ]);

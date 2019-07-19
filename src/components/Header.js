@@ -10,24 +10,30 @@ import {
 export class Header extends Component {
   render() {
     return ([
-      <MjmlSection key="first" padding='10px 0px' backgroundColor="#ffffff">
-        <MjmlColumn cssClass='blue-column'>
+      <MjmlSection
+        key="first"
+        padding='10px 0px'
+        backgroundColor={this.props.background}>
+        <MjmlColumn>
           <MjmlText 
             textDecoration='underline'
             font-size='12px'
-            color='#004990'
+            color={this.props.color4}
             align='center'
             padding='0'>
-            <a href='./email.html' style={{color: 'inherit'}}>{this.props.prenom} lo adipiscing elit, sed do eiusmod tempor incididunt</a>
+            <a href='./email.html' style={{color: 'inherit'}}>Lorem ipsum lo adipiscing elit, sed do eiusmod tempor incididunt</a>
           </MjmlText>
         </MjmlColumn>
       </MjmlSection>,
-      <MjmlSection key="second" padding='0px 0px' backgroundColor="#ffffff">
+      <MjmlSection
+        key="second"
+        padding='0px 0px'
+        backgroundColor={this.props.background}>
         <MjmlColumn>
           <MjmlText
             textDecoration='underline'
             font-size='12px'
-            color='#707070'
+            color={this.props.color7}
             align='center'
             padding='0'>
             <a href='./email.html' style={{color: 'inherit'}}>Version en ligne</a>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Intitule } from './Intitule';
 import { Divider } from './Divider';
 
 import {
@@ -13,20 +12,14 @@ import {
   MjmlText
 } from 'mjml-react';
 
-export const TextIntro = (props) => ([
-  <MjmlSection backgroundColor={props.background0} padding={props.padding}>
-    <MjmlColumn>
-      <Intitule
-        padding='0' 
-        nom='Bonjour Monsieur Giraud,'
-      />
-      <MjmlText
-        fontSize='20px'
-        fontWeight='lighter'
-        letterSpacing='1px'
-        align='center'>
-      {props.texte}
-      </MjmlText>
-    </MjmlColumn>
-  </MjmlSection>
+export const TextIntro = (props) => ([ 
+  <MjmlText
+    fontSize={props.fontsize}
+    fontWeight='lighter'
+    letterSpacing='1px'
+    align={props.align}
+    height={props.height}
+  >
+  {props.texte}
+  </MjmlText>
 ]);

@@ -62,13 +62,16 @@ export const generate = () => {
               <h1 style={{textAlign:'center'}}>templates</h1>
               <ul>
                 <li>
-                  <a href="/1" style={{textDecoration:'none'}}>Email 1</a>
+                  <a href="/1" style={{textDecoration:'none', color: 'grey'}}>Email 1</a>
                 </li>
                 <li>
-                  <a href="/2" style={{textDecoration:'none'}}>Email 2</a>
+                  <a href="/2" style={{textDecoration:'none', color: 'grey'}}>Email 2</a>
                 </li>
                 <li>
-                  <a href="/3" style={{textDecoration:'none'}}>Email 3</a>
+                  <a href="/3" style={{textDecoration:'none', color: 'grey'}}>Email Categories / Conseil / Institutionnel</a>
+                </li>
+                <li>
+                  <a href="/4" style={{textDecoration:'none', color: 'grey'}}>Email 3 produits</a>
                 </li>
               </ul>
             </MjmlText>
