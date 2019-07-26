@@ -27,6 +27,7 @@ export const Cta = (props) => ([
       width={props.width}
       lineHeight='1.5' 
       textTransform='uppercase'
+      cssClass='button'
       mjmlClass='button'
     >
     {props.text}

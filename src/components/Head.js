@@ -57,11 +57,12 @@ export const Head = () => ([
         name="button"
         font-family='"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif'
         textDecoration='none'
+        backgroundColor='pink'
       />
       <MjmlSection padding='0' backgroundColor=''></MjmlSection>
       <MjmlImage border='none' padding='0'/>
       <MjmlText 
-        font-size='20px'
+        font-size='18px'
         font-family='"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif'
         padding='0'
         line-height='1.1'
@@ -70,6 +71,7 @@ export const Head = () => ([
       {/* <MjmlButton 
         font-family='"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif'
         fontWeight='bold'
+        padding='0px'
         /> */}
       <MjmlColumn padding='0'/>
     </MjmlAttributes>

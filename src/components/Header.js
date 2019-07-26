@@ -7,18 +7,16 @@ import {
   MjmlText
 } from 'mjml-react';
 
-export class Header extends Component {
-  render() {
-    return ([
+export const Header = (props) => ([
       <MjmlSection
         key="first"
         padding='10px 0px'
-        backgroundColor={this.props.background}>
+        backgroundColor={props.background}>
         <MjmlColumn>
           <MjmlText 
             textDecoration='underline'
             font-size='12px'
-            color={this.props.color4}
+            color={props.color4}
             align='center'
             padding='0'>
             <a href='./email.html' style={{color: 'inherit'}}>Lorem ipsum lo adipiscing elit, sed do eiusmod tempor incididunt</a>
@@ -28,19 +26,16 @@ export class Header extends Component {
       <MjmlSection
         key="second"
         padding='0px 0px'
-        backgroundColor={this.props.background}>
+        backgroundColor={props.background}>
         <MjmlColumn>
           <MjmlText
             textDecoration='underline'
             font-size='12px'
-            color={this.props.color7}
+            color={props.color7}
             align='center'
             padding='0'>
             <a href='./email.html' style={{color: 'inherit'}}>Version en ligne</a>
           </MjmlText>
         </MjmlColumn>
       </MjmlSection>
-    ]);
-  }
-
-}
+]);

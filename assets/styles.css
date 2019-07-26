@@ -1,5 +1,5 @@
 .nav-link {
-  font-weight: lighter !important;
+  /* font-weight: lighter !important; */
   max-width: 26%;
 
   border-right: 1px solid #707070;
@@ -21,6 +21,14 @@ a {
   text-decoration: none;
   color: white;
 }
+/* règle pour zone click entière sur bouton
+.button td {
+  padding: 0 !important;
+}
+.button a {
+  padding: 10px 80px;
+  border: 2px solid #fd3d0e;
+} */
 
 /* align burger menu */
 /* .mj-menu-trigger {

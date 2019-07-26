@@ -17,7 +17,7 @@ import {
 
 export const Mentions = (props) => ([
 	<MjmlSection 
-		backgroundColor={props.background}
+		backgroundColor={props.color4}
 		padding={30}>
 		<MjmlColumn>
 			<MjmlText
