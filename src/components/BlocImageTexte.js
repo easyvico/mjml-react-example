@@ -26,7 +26,7 @@ export const BlocImageText = (props) => ([
         paddingTop={10}
         paddingBottom={5}
         lineHeight='1em'>
-        <a className="font-trebuchet" href='http://www.maif.fr' style={{color: 'inherit', textDecoration:'none'}} alt='Titre article'>{props.titre}</a>
+        <a className="font-trebuchet" href='http://www.google.fr' style={{color: 'inherit', textDecoration:'none'}} alt='Titre article'>{props.titre}</a>
       </MjmlText>
       <MjmlText
         color={props.color2}

@@ -1,7 +1,6 @@
 .nav-link {
   /* font-weight: lighter !important; */
   max-width: 26%;
-
   border-right: 1px solid #707070;
   text-align: center;
   line-height: 17px !important;
@@ -9,7 +8,6 @@
 .nav-link:last-child {
   border-right: none;
 }
-
 .font-trebuchet {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
@@ -33,26 +31,7 @@ a {
 /* align burger menu */
 /* .mj-menu-trigger {
   text-align: right;
-} */
 
-.backOrangeTextGreen p:last-child {
-  background: #c71585;
-  color: mediumseagreen;
-  font-family: Georgia,Times,Times New Roman,serif;
-  padding: 10px 0px;
-}
-
-.tiret p:last-child {
-  border-top: 3px solid red;
-}
-
-.violet {
-  background: violet;
-}
-
-.buttonColor td {
-  background: #74a31c !important;
-}
 
 /* .nav-link:hover {
   color: red !important;

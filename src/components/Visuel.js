@@ -17,7 +17,7 @@ import {
 export const Visuel = (props) => ([
   <MjmlSection key="first" padding-top='15px' backgroundColor="#ffffff">
     <MjmlColumn>
-      <MjmlImage href='http://www.maif.fr' src=' https://fillmurray.com/640/300' alt='image' align='center' />
+      <MjmlImage href='http://www.google.fr' src=' https://fillmurray.com/640/300' alt='image' align='center' />
     </MjmlColumn>
   </MjmlSection>
 ]);

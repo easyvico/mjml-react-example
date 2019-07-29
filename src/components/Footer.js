@@ -68,7 +68,7 @@ export const Footer = (props) => ([
 			/>
 		</MjmlColumn>
 	</MjmlSection>,
-	<MjmlSection backgroundColor={props.color} padding='20px 30px'>
+	<MjmlSection backgroundColor={props.color} padding='20px 10px'>
 		<MjmlGroup>
 			<MjmlColumn>
 				<MjmlImage

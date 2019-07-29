@@ -18,7 +18,7 @@ import { Cta } from './Cta';
 export const Banniere = (props) => ([
   // BANNIERE
   <MjmlSection key="first" backgroundColor={props.color4} direction={props.direction}>
-    <MjmlColumn backgroundColor={props.color}>
+    <MjmlColumn>
       <MjmlImage fluid-on-mobile='true' width={320} src="https://picsum.photos/320/120" alt='image' href="http://www.google.fr"/>
     </MjmlColumn>
     <MjmlColumn padding='10px 20px 10px 20px'>
@@ -32,11 +32,11 @@ export const Banniere = (props) => ([
         <p style={{margin:'0', textTransform:'uppercase'}}>
           <a className="font-trebuchet" href='http://www.google.fr' style={{color: 'inherit', textDecoration:'none'}} alt='Titre article'>{props.titre}</a>
         </p>
-        <p style={{margin:'0'}}>
+        <p style={{marginTop:'10px', marginBottom:'0'}}>
           <a className="font-trebuchet" href='http://www.google.fr' style={{color: 'inherit', textDecoration:'none'}} alt='Titre article'>{props.texte}</a>
         </p>
-        <p style={{margin:'0'}}>
-          <a href='#' style={{color: props.color2, textDecoration:'none'}}>{props.lien}</a>
+        <p style={{marginTop:'10px', marginBottom:'0'}}>
+          <a href='http://www.google.fr' style={{color: props.color2, textDecoration:'none'}}>{props.lien}</a>
         </p>
       </MjmlText>
     </MjmlColumn>
