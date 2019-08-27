@@ -125,6 +125,7 @@ export const generate = () => {
         />
 
         <Footer
+          colorDivider={style.color4}
           color4={style.color4}
 		      color={style.color0}
           color2={style.color2}

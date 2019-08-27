@@ -11,7 +11,7 @@ import {
 } from 'mjml-react';
 
 export const LogoNavBar = (props) => ([
-  <MjmlSection padding='10px 0px 10px 10px' backgroundColor={props.color}>
+  <MjmlSection padding='10px 0px' backgroundColor={props.color}>
     <MjmlColumn width='40%' verticalAlign='middle'>
       <MjmlImage
         href='http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV18Z8sAMKbxtsGOFu1jSw_l_lLIuUrdviHd6nqDRHfRLm&c=7EKibOF-ZZHjknNbHOXuxA' 
@@ -30,7 +30,7 @@ export const LogoNavBar = (props) => ([
         icoPadding='5px'>
         <MjmlNavbarLink
           fontSize={14}
-          cssClass="nav-link"
+          cssClass="nav-link font-tahoma"
           textTransform='lowcase'
           padding="0px 10px"
           href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV1_sfb8iQDNBMjlgEfLJ8n8K0WXcmkGwsaBoh2lR9jxsL&c=7EKibOF-ZZHjknNbHOXuxA"

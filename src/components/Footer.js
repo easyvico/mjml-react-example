@@ -22,7 +22,7 @@ import { Divider } from './Divider';
 
 export const Footer = (props) => ([
 	<Divider 
-		border={props.color4}
+		border={props.colorDivider}
 		background={props.color}
 		padding='20px 0 0 0'
 	/>,
@@ -68,7 +68,7 @@ export const Footer = (props) => ([
 			/>
 		</MjmlColumn>
 	</MjmlSection>,
-	<MjmlSection backgroundColor={props.color} padding='20px 10px'>
+	<MjmlSection backgroundColor={props.color} padding='20px 0px'>
 		<MjmlGroup>
 			<MjmlColumn>
 				<MjmlImage

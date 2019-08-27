@@ -24,7 +24,7 @@ import {
 
 import { Head } from '../components/Head';
 import { Footer } from '../components/Footer';
-import { BlocTextImageHoriz } from '../components/BlocTextImageHoriz';
+import { BlocTextImageVerti } from '../components/BlocTextImageVerti';
 import { TextIntro } from '../components/TextIntro';
 import { Divider } from '../components/Divider';
 import { BlocHeader } from '../components/BlocHeader';
@@ -64,58 +64,21 @@ export const generate = () => {
           color5={style.color5}
         />
         <TextIntro
-          fontsize='18px'
+          fontsize='24px'
           align='center'
           color={style.color0}
           padding='0px'
           paddingSection='10px 20px'
-          texte='Titre de l&rsquo;email des trois produits'
+          texte='Titre de la page du monoproduit'
         />
-        <Divider
-          padding='10px 20px 20px'
-          padding0='0px'
-          border={style.color5}
-          background={style.color0}
-        />
-        <BlocTextImageHoriz
-          titre='Titre du produit numéro un ®'
-          texte='Texte descriptif du produit numéro un. Lorem ipsum dolor sit amet.'
+        <BlocTextImageVerti
+          titre='Titre du produit lorem ipsum dolor sit amet'
+          texte='Texte descriptif du produit lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
           picto='https://imgshare.io/images/2019/07/18/ico-search.png'
           color1={style.color1}
           color={style.color0}
           verdana={style.fontVerdana}
-          padding='0 10px 10px 10px'
-        />
-        <Divider
-          padding='10px 20px 20px'
-          padding0='0px'
-          border={style.color5}
-          background={style.color0}
-        />
-        <BlocTextImageHoriz
-          titre='Titre du produit numéro deux ®'
-          texte='Texte descriptif du produit numéro deux. Lorem ipsum dolor sit amet.'
-          picto='https://imgshare.io/images/2019/07/18/ico-search.png'
-          color1={style.color1}
-          color={style.color0}
-          verdana={style.fontVerdana}
-          padding='0 10px 10px 10px'
-          direction='rtl'
-        />
-        <Divider
-          padding='10px 20px 20px'
-          padding0='0px'
-          border={style.color5}
-          background={style.color0}
-        />
-        <BlocTextImageHoriz
-          titre='Titre du produit numéro trois ®'
-          texte='Texte descriptif du produit numéro trois. Lorem ipsum dolor sit amet.'
-          picto='https://imgshare.io/images/2019/07/18/ico-search.png'
-          color1={style.color1}
-          color={style.color0}
-          padding='0px 10px 20px 10px'
-          verdana={style.fontVerdana}
+          padding='10px 20px 10px 20px'
         />
         <Banniere
           titre='Titre de la bannière'

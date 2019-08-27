@@ -6,6 +6,9 @@ import * as email1 from './templates/email1';
 import * as email2 from './templates/email2';
 import * as emailCat from './templates/email-cat';
 import * as emailProduits from './templates/email-3produits';
+import * as emailMono from './templates/email-mono';
+import * as emailEntrepot from './templates/email-entrepot';
+import * as emailAccessibilite from './templates/email-accessibilite';
 
 const port = 3000;
 const app = express();
@@ -27,6 +30,21 @@ app.get('/3', (req, res) => {
 
 app.get('/4', (req, res) => {
   const {html} = render(emailProduits.generate(), {validationLevel: 'soft'});
+  res.send(html);
+});
+
+app.get('/5', (req, res) => {
+  const {html} = render(emailMono.generate(), {validationLevel: 'soft'});
+  res.send(html);
+});
+
+app.get('/6', (req, res) => {
+  const {html} = render(emailEntrepot.generate(), {validationLevel: 'soft'});
+  res.send(html);
+});
+
+app.get('/7', (req, res) => {
+  const {html} = render(emailAccessibilite.generate(), {validationLevel: 'soft'});
   res.send(html);
 });
 
