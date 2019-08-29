@@ -22,14 +22,13 @@ import {
   MjmlNavbar
 } from 'mjml-react';
 
-import { Head } from '../components/Head';
-import { Footer } from '../components/Footer';
-import { BlocTextImageHoriz } from '../components/BlocTextImageHoriz';
-import { TextIntro } from '../components/TextIntro';
-import { Divider } from '../components/Divider';
-import { BlocHeader } from '../components/BlocHeader';
-import { Banniere } from '../components/Banniere';
-import { LogoTheme } from '../components/LogoTheme';
+import { Head } from '../../components/Head';
+import { Footer } from '../../components/Footer';
+import { BlocTextImageHoriz } from '../../components/BlocTextImageHoriz';
+import { TextIntro } from '../../components/TextIntro';
+import { Divider } from '../../components/Divider';
+import { BlocHeader } from '../../components/BlocHeader';
+import { Banniere } from '../../components/Banniere';
 
 const style = {
   tiret: {
@@ -50,8 +49,7 @@ const style = {
   color4: '#004990',
   color5: '#cccccc',
   color6: '#F8F8F8',
-  color7: '#707070',
-  color8: '#d65a2b'
+  color7: '#707070'
 };
 
 export const generate = () => {
@@ -64,11 +62,6 @@ export const generate = () => {
           color7={style.color7}
           color={style.color0}
           color5={style.color5}
-          padding='50px 0 0 0'
-        />
-        <LogoTheme
-          color={style.color0}
-          src='https://imgshare.io/images/2019/08/27/sol-entrepot.png'
         />
         <TextIntro
           fontsize='18px'
@@ -76,12 +69,12 @@ export const generate = () => {
           color={style.color0}
           padding='0px'
           paddingSection='10px 20px'
-          texte='Titre de l&rsquo;email solutions entrepôt'
+          texte='Titre de l&rsquo;email des trois produits'
         />
         <Divider
           padding='10px 20px 20px'
           padding0='0px'
-          border={style.color8}
+          border={style.color5}
           background={style.color0}
         />
         <BlocTextImageHoriz
@@ -96,7 +89,7 @@ export const generate = () => {
         <Divider
           padding='10px 20px 20px'
           padding0='0px'
-          border={style.color8}
+          border={style.color5}
           background={style.color0}
         />
         <BlocTextImageHoriz
@@ -112,7 +105,7 @@ export const generate = () => {
         <Divider
           padding='10px 20px 20px'
           padding0='0px'
-          border={style.color8}
+          border={style.color5}
           background={style.color0}
         />
         <BlocTextImageHoriz
@@ -134,7 +127,7 @@ export const generate = () => {
           color4={style.color4}
         />
         <Footer
-          colorDivider={style.color8}
+          colorDivider={style.color4}
           color4={style.color4}
 		      color={style.color0}
           color2={style.color2}

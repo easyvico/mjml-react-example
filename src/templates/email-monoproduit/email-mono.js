@@ -22,13 +22,12 @@ import {
   MjmlNavbar
 } from 'mjml-react';
 
-import { Head } from '../components/Head';
-import { Footer } from '../components/Footer';
-import { BlocTextImageVerti } from '../components/BlocTextImageVerti';
-import { TextIntro } from '../components/TextIntro';
-import { Divider } from '../components/Divider';
-import { BlocHeader } from '../components/BlocHeader';
-import { Banniere } from '../components/Banniere';
+import { Head } from '../../components/Head';
+import { Footer } from '../../components/Footer';
+import { BlocTextImageVerti } from '../../components/BlocTextImageVerti';
+import { TextIntro } from '../../components/TextIntro';
+import { BlocHeader } from '../../components/BlocHeader';
+import { Banniere } from '../../components/Banniere';
 
 const style = {
   tiret: {

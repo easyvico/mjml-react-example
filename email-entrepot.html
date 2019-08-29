@@ -1,0 +1,1392 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <title>Signals</title>
+  <!--[if !mso]><!-- -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--<![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style type="text/css">
+    #outlook a {
+      padding: 0;
+    }
+
+    .ReadMsgBody {
+      width: 100%;
+    }
+
+    .ExternalClass {
+      width: 100%;
+    }
+
+    .ExternalClass * {
+      line-height: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    table,
+    td {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    img {
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    p {
+      display: block;
+      margin: 13px 0;
+    }
+  </style>
+  <!--[if !mso]><!-->
+  <style type="text/css">
+    @media only screen and (max-width:480px) {
+      @-ms-viewport {
+        width: 320px;
+      }
+
+      @viewport {
+        width: 320px;
+      }
+    }
+  </style>
+  <!--<![endif]-->
+  <!--[if mso]>
+<xml>
+<o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+  <!--[if lte mso 11]>
+<style type="text/css">
+  .outlook-group-fix { width:100% !important; }
+</style>
+<![endif]-->
+  <!--[if !mso]><!-->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+  </style>
+  <!--<![endif]-->
+  <style type="text/css">
+    @media only screen and (min-width:480px) {
+      .mj-column-per-100 {
+        width: 100% !important;
+        max-width: 100%;
+      }
+
+      .mj-column-per-40 {
+        width: 40% !important;
+        max-width: 40%;
+      }
+
+      .mj-column-per-60 {
+        width: 60% !important;
+        max-width: 60%;
+      }
+
+      .mj-column-per-50 {
+        width: 50% !important;
+        max-width: 50%;
+      }
+
+      .mj-column-per-33 {
+        width: 33.333333333333336% !important;
+        max-width: 33.333333333333336%;
+      }
+
+      .mj-column-per-20 {
+        width: 20% !important;
+        max-width: 20%;
+      }
+    }
+  </style>
+  <style type="text/css">
+    @media only screen and (max-width:480px) {
+      table.full-width-mobile {
+        width: 100% !important;
+      }
+
+      td.full-width-mobile {
+        width: auto !important;
+      }
+    }
+
+
+    noinput.mj-menu-checkbox {
+      display: block !important;
+      max-height: none !important;
+      visibility: visible !important;
+    }
+
+    @media only screen and (max-width:480px) {
+      .mj-menu-checkbox[type="checkbox"]~.mj-inline-links {
+        display: none !important;
+      }
+
+      .mj-menu-checkbox[type="checkbox"]:checked~.mj-inline-links,
+      .mj-menu-checkbox[type="checkbox"]~.mj-menu-trigger {
+        display: block !important;
+        max-width: none !important;
+        max-height: none !important;
+        font-size: inherit !important;
+      }
+
+      .mj-menu-checkbox[type="checkbox"]~.mj-inline-links>a {
+        display: block !important;
+      }
+
+      .mj-menu-checkbox[type="checkbox"]:checked~.mj-menu-trigger .mj-menu-icon-close {
+        display: block !important;
+      }
+
+      .mj-menu-checkbox[type="checkbox"]:checked~.mj-menu-trigger .mj-menu-icon-open {
+        display: none !important;
+      }
+    }
+  </style>
+  <style type="text/css">
+    @media only screen and (max-width: 480px) {
+      .nav-link {
+        max-width: 25% !important;
+        font-size: 14px !important;
+      }
+
+      .nav-link:first-child {
+        max-width: 27% !important;
+      }
+    }
+
+      {
+      /* .align-right div {
+text-align: right !important;
+font-size: 14px !important;
+}
+@media only screen and (max-width: 480px) {
+.align-right div {
+  text-align: center !important;
+  font-size: 12px !important;
+}
+} */
+    }
+  </style>
+</head>
+
+<body style="background-color:#F8F8F8;">
+  <div
+    style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+    Découvrez les catégories</div>
+  <div style="background-color:#F8F8F8;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:640px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:10px 0px;text-align:center;vertical-align:top;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:640px;" ><![endif]-->
+              <div class="mj-column-per-100 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:12px;line-height:1.1;text-align:center;text-decoration:underline;color:#004990;">
+                                <a href="./email.html" style="text-decoration: none; color: inherit;">Lorem ipsum lo
+                                  adipiscing elit, sed do eiusmod tempor incididunt</a></div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:640px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:0px 0px;text-align:center;vertical-align:top;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:640px;" ><![endif]-->
+              <div class="mj-column-per-100 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:12px;line-height:1.1;text-align:center;text-decoration:underline;color:#707070;">
+                                <a href="./email.html" style="text-decoration: none; color: inherit;">Version en
+                                  ligne</a></div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:640px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:10px 0px;text-align:center;vertical-align:top;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:middle;width:256px;" ><![endif]-->
+              <div class="mj-column-per-40 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:middle;padding:0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="border-collapse:collapse;border-spacing:0px;">
+                                <tbody>
+                                  <tr>
+                                    <td style="width:220px;"><a
+                                        href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV18Z8sAMKbxtsGOFu1jSw_l_lLIuUrdviHd6nqDRHfRLm&amp;c=7EKibOF-ZZHjknNbHOXuxA"
+                                        target="_blank" style="text-decoration: none; color: white;"><img alt="logo"
+                                          height="auto"
+                                          src="https://imgshare.io/images/2019/06/25/Signals-La-Rochelle-anime.gif"
+                                          style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;"
+                                          width="220"></a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td><td class="" style="vertical-align:middle;width:384px;" ><![endif]-->
+              <div class="mj-column-per-60 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:middle;padding:0;padding-top:15px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="center" style="font-size:0px;word-break:break-word;">
+                              <div class="mj-inline-links">
+                                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td style="padding:0px 10px;" class="nav-link-outlook font-tahoma-outlook" ><![endif]-->
+                                <a class="mj-link nav-link font-tahoma"
+                                  href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV1_sfb8iQDNBMjlgEfLJ8n8K0WXcmkGwsaBoh2lR9jxsL&amp;c=7EKibOF-ZZHjknNbHOXuxA"
+                                  target="_blank"
+                                  style="max-width: 26%; border-right: 1px solid #707070; text-align: center; display: inline-block; color: #cccccc; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; text-decoration: none; text-transform: lowcase; padding: 0px 10px; line-height: 17px;">Signalisation
+                                  de sécurité </a>
+                                <!--[if mso | IE]></td><td style="padding:0px 10px;" class="nav-link-outlook" ><![endif]-->
+                                <a class="mj-link nav-link"
+                                  href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV1weZp4poInSbOKXmIQJEDVf3s4BCR12RaYyIi3i7DKhp&amp;c=7EKibOF-ZZHjknNbHOXuxA"
+                                  target="_blank"
+                                  style="max-width: 26%; border-right: 1px solid #707070; text-align: center; display: inline-block; color: #cccccc; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; text-decoration: none; text-transform: lowcase; padding: 0px 10px; line-height: 17px;">Protection
+                                  du site </a>
+                                <!--[if mso | IE]></td><td style="padding:0px 10px;" class="nav-link-outlook" ><![endif]-->
+                                <a class="mj-link nav-link"
+                                  href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV1xQvTiNSF60hcjyKwXehR9A591qoJjzFxm0cC3G3D9q7&amp;c=7EKibOF-ZZHjknNbHOXuxA"
+                                  target="_blank"
+                                  style="max-width: 26%; text-align: center; border-right: none; display: inline-block; color: #cccccc; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; text-decoration: none; text-transform: lowcase; padding: 0px 10px; line-height: 17px;">Tous
+                                  les produits </a>
+                                <!--[if mso | IE]></td></tr></table><![endif]-->
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:640px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:10px;text-align:center;vertical-align:top;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:middle;width:620px;" ><![endif]-->
+              <div class="mj-column-per-100 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:middle;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:middle;padding:0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="border-collapse:collapse;border-spacing:0px;">
+                                <tbody>
+                                  <tr>
+                                    <td style="width:380px;"><a
+                                        href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV18Z8sAMKbxtsGOFu1jSw_l_lLIuUrdviHd6nqDRHfRLm&amp;c=7EKibOF-ZZHjknNbHOXuxA"
+                                        target="_blank" style="text-decoration: none; color: white;"><img
+                                          alt="logo solutions entrepôt" height="auto"
+                                          src="https://imgshare.io/images/2019/08/27/sol-entrepot.png"
+                                          style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;"
+                                          width="380"></a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:640px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:10px 20px;text-align:center;vertical-align:top;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+              <div class="mj-column-per-100 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="center" style="font-size:0px;padding:0px;word-break:break-word;">
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:18px;letter-spacing:1px;line-height:1.1;text-align:center;color:#3c4858;">
+                                <span style="display:block"><a href="#"
+                                    style="color: inherit; text-decoration: none;"></a></span>Titre de l’email solutions
+                                entrepôt version test</div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:640px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:10px 20px 20px;text-align:center;vertical-align:top;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+              <div class="mj-column-per-100 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td style="font-size:0px;padding:0px;word-break:break-word;">
+                              <p style="border-top:solid 1px #d65a2b;font-size:1;margin:0px auto;width:100%;"></p>
+                              <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px #d65a2b;font-size:1;margin:0px auto;width:600px;" role="presentation" width="600px" ><tr><td style="height:0;line-height:0;"> &nbsp;
+</td></tr></table><![endif]-->
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:640px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:0 10px 10px 10px;text-align:center;vertical-align:top;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:310px;" ><![endif]-->
+              <div class="mj-column-per-50 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:10px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="border-collapse:collapse;border-spacing:0px;" class="full-width-mobile">
+                                <tbody>
+                                  <tr>
+                                    <td style="width:290px;" class="full-width-mobile"><img alt="image" height="auto"
+                                        src="https://imgshare.io/images/2019/08/20/SE07_350x350.jpg"
+                                        style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;"
+                                        width="290"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:310px;" ><![endif]-->
+              <div class="mj-column-per-50 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:10px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="left" style="font-size:0px;padding:0;padding-bottom:5px;word-break:break-word;">
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:20px;font-weight:bold;letter-spacing:1px;line-height:1em;text-align:left;text-transform:uppercase;color:#3c4858;">
+                                <a class="font-trebuchet" href="http://www.google.fr"
+                                  style="font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: inherit; text-decoration: none;"
+                                  alt="Titre article">Titre du produit numéro un ®</a></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="font-size:0px;padding:15px 0;word-break:break-word;">
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:18px;line-height:1.1;text-align:left;color:#3c4858;">
+                                <img src="https://imgshare.io/images/2019/07/18/ico-search.png" alt="picto loupe"
+                                  style="padding-right:15px;width:25px"><span
+                                  style="font-family:Verdana,Geneva,sans-serif;font-size:20px;font-weight:bold;color:#fd3d0e">Nouveau</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="125px" style="vertical-align:top;height:125px;"><![endif]-->
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:18px;letter-spacing:1px;line-height:1.1;text-align:left;color:#3c4858;height:125px;">
+                                Texte descriptif du produit numéro un. Lorem ipsum dolor sit amet.</div>
+                              <!--[if mso | IE]></td></tr></table><![endif]-->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" vertical-align="middle" class="button"
+                              style="font-size:0px;padding:0px;word-break:break-word;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="border-collapse:separate;width:100%;line-height:100%;">
+                                <tr>
+                                  <td align="center" role="presentation"
+                                    style="border:2px solid #fd3d0e;border-radius:0;cursor:auto;padding:10px 25px;background:none;"
+                                    valign="middle"><a
+                                      href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV1wVE5p8bdPE91adlnlY84XDYsxLywEjDBdg7UYGPg_Xm&amp;c=7EKibOF-ZZHjknNbHOXuxA"
+                                      style="background: none; color: #fd3d0e; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal; line-height: 1.5; Margin: 0; text-decoration: none; text-transform: uppercase;"
+                                      target="_blank">voir le produit</a></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:640px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:10px 20px 20px;text-align:center;vertical-align:top;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+              <div class="mj-column-per-100 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td style="font-size:0px;padding:0px;word-break:break-word;">
+                              <p style="border-top:solid 1px #d65a2b;font-size:1;margin:0px auto;width:100%;"></p>
+                              <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px #d65a2b;font-size:1;margin:0px auto;width:600px;" role="presentation" width="600px" ><tr><td style="height:0;line-height:0;"> &nbsp;
+</td></tr></table><![endif]-->
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:640px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:rtl;font-size:0px;padding:0 10px 10px 10px;text-align:center;vertical-align:top;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:310px;" ><![endif]-->
+              <div class="mj-column-per-50 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:10px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="border-collapse:collapse;border-spacing:0px;" class="full-width-mobile">
+                                <tbody>
+                                  <tr>
+                                    <td style="width:290px;" class="full-width-mobile"><img alt="image" height="auto"
+                                        src="https://picsum.photos/400"
+                                        style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;"
+                                        width="290"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:310px;" ><![endif]-->
+              <div class="mj-column-per-50 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:10px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="left" style="font-size:0px;padding:0;padding-bottom:5px;word-break:break-word;">
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:20px;font-weight:bold;letter-spacing:1px;line-height:1em;text-align:left;text-transform:uppercase;color:#3c4858;">
+                                <a class="font-trebuchet" href="http://www.google.fr"
+                                  style="font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: inherit; text-decoration: none;"
+                                  alt="Titre article">Titre du produit numéro deux ®</a></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="font-size:0px;padding:15px 0;word-break:break-word;">
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:18px;line-height:1.1;text-align:left;color:#3c4858;">
+                                <img src="https://imgshare.io/images/2019/07/18/ico-search.png" alt="picto loupe"
+                                  style="padding-right:15px;width:25px"><span
+                                  style="font-family:Verdana,Geneva,sans-serif;font-size:20px;font-weight:bold;color:#fd3d0e">Nouveau</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="125px" style="vertical-align:top;height:125px;"><![endif]-->
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:18px;letter-spacing:1px;line-height:1.1;text-align:left;color:#3c4858;height:125px;">
+                                Texte descriptif du produit numéro deux. Lorem ipsum dolor sit amet.</div>
+                              <!--[if mso | IE]></td></tr></table><![endif]-->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" vertical-align="middle" class="button"
+                              style="font-size:0px;padding:0px;word-break:break-word;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="border-collapse:separate;width:100%;line-height:100%;">
+                                <tr>
+                                  <td align="center" role="presentation"
+                                    style="border:2px solid #fd3d0e;border-radius:0;cursor:auto;padding:10px 25px;background:none;"
+                                    valign="middle"><a
+                                      href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV1wVE5p8bdPE91adlnlY84XDYsxLywEjDBdg7UYGPg_Xm&amp;c=7EKibOF-ZZHjknNbHOXuxA"
+                                      style="background: none; color: #fd3d0e; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal; line-height: 1.5; Margin: 0; text-decoration: none; text-transform: uppercase;"
+                                      target="_blank">voir le produit</a></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:640px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:10px 20px 20px;text-align:center;vertical-align:top;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
+              <div class="mj-column-per-100 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td style="font-size:0px;padding:0px;word-break:break-word;">
+                              <p style="border-top:solid 1px #d65a2b;font-size:1;margin:0px auto;width:100%;"></p>
+                              <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px #d65a2b;font-size:1;margin:0px auto;width:600px;" role="presentation" width="600px" ><tr><td style="height:0;line-height:0;"> &nbsp;
+</td></tr></table><![endif]-->
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:640px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:0px 10px 20px 10px;text-align:center;vertical-align:top;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:310px;" ><![endif]-->
+              <div class="mj-column-per-50 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:10px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="border-collapse:collapse;border-spacing:0px;" class="full-width-mobile">
+                                <tbody>
+                                  <tr>
+                                    <td style="width:290px;" class="full-width-mobile"><img alt="image" height="auto"
+                                        src="https://picsum.photos/400"
+                                        style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;"
+                                        width="290"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:310px;" ><![endif]-->
+              <div class="mj-column-per-50 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:10px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="left" style="font-size:0px;padding:0;padding-bottom:5px;word-break:break-word;">
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:20px;font-weight:bold;letter-spacing:1px;line-height:1em;text-align:left;text-transform:uppercase;color:#3c4858;">
+                                <a class="font-trebuchet" href="http://www.google.fr"
+                                  style="font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: inherit; text-decoration: none;"
+                                  alt="Titre article">Titre du produit numéro trois ®</a></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="font-size:0px;padding:15px 0;word-break:break-word;">
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:18px;line-height:1.1;text-align:left;color:#3c4858;">
+                                <img src="https://imgshare.io/images/2019/07/18/ico-search.png" alt="picto loupe"
+                                  style="padding-right:15px;width:25px"><span
+                                  style="font-family:Verdana,Geneva,sans-serif;font-size:20px;font-weight:bold;color:#fd3d0e">Nouveau</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="125px" style="vertical-align:top;height:125px;"><![endif]-->
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:18px;letter-spacing:1px;line-height:1.1;text-align:left;color:#3c4858;height:125px;">
+                                Texte descriptif du produit numéro trois. Lorem ipsum dolor sit amet.</div>
+                              <!--[if mso | IE]></td></tr></table><![endif]-->
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" vertical-align="middle" class="button"
+                              style="font-size:0px;padding:0px;word-break:break-word;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="border-collapse:separate;width:100%;line-height:100%;">
+                                <tr>
+                                  <td align="center" role="presentation"
+                                    style="border:2px solid #fd3d0e;border-radius:0;cursor:auto;padding:10px 25px;background:none;"
+                                    valign="middle"><a
+                                      href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV1wVE5p8bdPE91adlnlY84XDYsxLywEjDBdg7UYGPg_Xm&amp;c=7EKibOF-ZZHjknNbHOXuxA"
+                                      style="background: none; color: #fd3d0e; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal; line-height: 1.5; Margin: 0; text-decoration: none; text-transform: uppercase;"
+                                      target="_blank">voir le produit</a></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#004990;background-color:#004990;Margin:0px auto;max-width:640px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="background:#004990;background-color:#004990;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:0;text-align:center;vertical-align:top;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:320px;" ><![endif]-->
+              <div class="mj-column-per-50 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="border-collapse:collapse;border-spacing:0px;" class="full-width-mobile">
+                                <tbody>
+                                  <tr>
+                                    <td style="width:320px;" class="full-width-mobile"><a href="http://www.google.fr"
+                                        target="_blank" style="text-decoration: none; color: white;"><img alt="image"
+                                          height="auto" src="https://picsum.photos/320/120"
+                                          style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;"
+                                          width="320"></a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:320px;" ><![endif]-->
+              <div class="mj-column-per-50 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:10px 20px 10px 20px;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:18px;letter-spacing:1px;line-height:1em;text-align:center;color:#ffffff;">
+                                <p style="margin:0;text-transform:uppercase"><a class="font-trebuchet"
+                                    href="http://www.google.fr"
+                                    style="font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: inherit; text-decoration: none;"
+                                    alt="Titre article">Titre de la bannière</a></p>
+                                <p style="margin-top:10px;margin-bottom:0"><a class="font-trebuchet"
+                                    href="http://www.google.fr"
+                                    style="font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif; color: inherit; text-decoration: none;"
+                                    alt="Titre article">Texte descriptif de la bannière lorem ipsum</a></p>
+                                <p style="margin-top:10px;margin-bottom:0"><a href="http://www.google.fr"
+                                    style="color: #fd3d0e; text-decoration: none;">&gt; Cliquez ici</a></p>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:640px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:20px 0 0 0;text-align:center;vertical-align:top;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:640px;" ><![endif]-->
+              <div class="mj-column-per-100 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                              <p style="border-top:solid 1px #d65a2b;font-size:1;margin:0px auto;width:100%;"></p>
+                              <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px #d65a2b;font-size:1;margin:0px auto;width:590px;" role="presentation" width="590px" ><tr><td style="height:0;line-height:0;"> &nbsp;
+</td></tr></table><![endif]-->
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:640px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:20px 20px 0px;text-align:center;vertical-align:top;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:200px;" ><![endif]-->
+              <div class="mj-column-per-33 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="border-collapse:collapse;border-spacing:0px;">
+                                <tbody>
+                                  <tr>
+                                    <td style="width:64px;"><a
+                                        href="https://www.signals.fr/cms/paiement.html?memberid=29894357930"
+                                        target="_blank" style="text-decoration: none; color: white;"><img alt="picto"
+                                          height="auto" src="https://imgshare.io/images/2019/07/16/ico-creditcard.png"
+                                          style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;"
+                                          width="64"></a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="font-size:0px;padding:7px 28px 30px;word-break:break-word;">
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:18px;line-height:1.1;text-align:center;color:#004990;">
+                                <a href="https://www.signals.fr/cms/paiement.html?memberid=29894357930"
+                                  style="color: inherit; text-decoration: none;">Paiement sécurisé par CB</a></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:18px;line-height:1.1;text-align:left;color:#3c4858;">
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:200px;" ><![endif]-->
+              <div class="mj-column-per-33 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="border-collapse:collapse;border-spacing:0px;">
+                                <tbody>
+                                  <tr>
+                                    <td style="width:64px;"><a
+                                        href="https://www.signals.fr/contacts?memberid=29894357930" target="_blank"
+                                        style="text-decoration: none; color: white;"><img alt="picto" height="auto"
+                                          src="https://imgshare.io/images/2019/07/16/ico-headphone.png"
+                                          style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;"
+                                          width="64"></a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="font-size:0px;padding:7px 28px 30px;word-break:break-word;">
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:18px;line-height:1.1;text-align:center;color:#004990;">
+                                <a href="https://www.signals.fr/contacts?memberid=29894357930"
+                                  style="color: inherit; text-decoration: none;">Du lundi au vendredi 8h-18h</a></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:18px;line-height:1.1;text-align:left;color:#3c4858;">
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:200px;" ><![endif]-->
+              <div class="mj-column-per-33 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="border-collapse:collapse;border-spacing:0px;">
+                                <tbody>
+                                  <tr>
+                                    <td style="width:64px;"><a
+                                        href="https://www.signals.fr/cms/livraison.html?memberid=29894357930"
+                                        target="_blank" style="text-decoration: none; color: white;"><img alt="picto"
+                                          height="auto" src="https://imgshare.io/images/2019/07/16/ico-rocket.png"
+                                          style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;"
+                                          width="64"></a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" style="font-size:0px;padding:7px 28px 30px;word-break:break-word;">
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:18px;line-height:1.1;text-align:center;color:#004990;">
+                                <a href="https://www.signals.fr/cms/livraison.html?memberid=29894357930"
+                                  style="color: inherit; text-decoration: none;">Livraison gratuite sous 24 à 48h</a>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:18px;line-height:1.1;text-align:left;color:#3c4858;">
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:640px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:0;text-align:center;vertical-align:top;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:320px;" ><![endif]-->
+              <div class="mj-column-per-50 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="center" vertical-align="middle" class="button"
+                              style="font-size:0px;padding:10px 25px;padding-bottom:15px;word-break:break-word;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="border-collapse:separate;width:91%;line-height:100%;">
+                                <tr>
+                                  <td align="center" role="presentation"
+                                    style="border:2px solid #fd3d0e;border-radius:0;cursor:auto;padding:10px 25px;background:none;"
+                                    valign="middle"><a
+                                      href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV11d5Pm2HfS9d6xeX97o_8zlXLYyIkU0VF1r4lL2aou4q&amp;c=7EKibOF-ZZHjknNbHOXuxA"
+                                      style="background: none; color: #fd3d0e; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal; line-height: 1.5; Margin: 0; text-decoration: none; text-transform: uppercase;"
+                                      target="_blank">devis gratuit</a></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:320px;" ><![endif]-->
+              <div class="mj-column-per-50 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="center" vertical-align="middle" class="button"
+                              style="font-size:0px;padding:10px 25px;padding-bottom:15px;word-break:break-word;">
+                              <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                style="border-collapse:separate;width:91%;line-height:100%;">
+                                <tr>
+                                  <td align="center" role="presentation"
+                                    style="border:2px solid #fd3d0e;border-radius:0;cursor:auto;padding:10px 25px;background:none;"
+                                    valign="middle"><a
+                                      href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV1wVE5p8bdPE91adlnlY84XDYsxLywEjDBdg7UYGPg_Xm&amp;c=7EKibOF-ZZHjknNbHOXuxA"
+                                      style="background: none; color: #fd3d0e; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal; line-height: 1.5; Margin: 0; text-decoration: none; text-transform: uppercase;"
+                                      target="_blank">catalogues virtuels</a></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;Margin:0px auto;max-width:640px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="background:#ffffff;background-color:#ffffff;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:20px 0px;text-align:center;vertical-align:top;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="width:640px;" ><![endif]-->
+              <div class="mj-column-per-100 outlook-group-fix"
+                style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;">
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:top;width:128px;" ><![endif]-->
+                <div class="mj-column-per-20 outlook-group-fix"
+                  style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:20%;">
+                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                    <tbody>
+                      <tr>
+                        <td style="vertical-align:top;padding:0;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                  style="border-collapse:collapse;border-spacing:0px;">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:35px;"><a
+                                          href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV15lmpKODlvF8x0SpBsIqb57vgZbb58jzNmpNdYh7HUfJ&amp;c=7EKibOF-ZZHjknNbHOXuxA"
+                                          target="_blank" style="text-decoration: none; color: white;"><img
+                                            alt="Facebook" height="auto"
+                                            src="https://imgshare.io/images/2019/07/16/ico-facebook.png"
+                                            style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;"
+                                            width="35"></a></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!--[if mso | IE]></td><td style="vertical-align:top;width:128px;" ><![endif]-->
+                <div class="mj-column-per-20 outlook-group-fix"
+                  style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:20%;">
+                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                    <tbody>
+                      <tr>
+                        <td style="vertical-align:top;padding:0;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                  style="border-collapse:collapse;border-spacing:0px;">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:35px;"><a
+                                          href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV11voj59nJQWFrbVBfoVbJXJ9DtBGcc_Btv7aJKQ7mdk2&amp;c=7EKibOF-ZZHjknNbHOXuxA"
+                                          target="_blank" style="text-decoration: none; color: white;"><img
+                                            alt="Youtube" height="auto"
+                                            src="https://imgshare.io/images/2019/07/16/ico-youtube.png"
+                                            style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;"
+                                            width="35"></a></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!--[if mso | IE]></td><td style="vertical-align:top;width:128px;" ><![endif]-->
+                <div class="mj-column-per-20 outlook-group-fix"
+                  style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:20%;">
+                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                    <tbody>
+                      <tr>
+                        <td style="vertical-align:top;padding:0;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                  style="border-collapse:collapse;border-spacing:0px;">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:35px;"><a
+                                          href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV18BrHJan_8DvKbAIAwNd_RykC6f4p6FDLRMSEZNhTAgD&amp;c=7EKibOF-ZZHjknNbHOXuxA"
+                                          target="_blank" style="text-decoration: none; color: white;"><img
+                                            alt="Twitter" height="auto"
+                                            src="https://imgshare.io/images/2019/07/16/ico-twitter.png"
+                                            style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;"
+                                            width="35"></a></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!--[if mso | IE]></td><td style="vertical-align:top;width:128px;" ><![endif]-->
+                <div class="mj-column-per-20 outlook-group-fix"
+                  style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:20%;">
+                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                    <tbody>
+                      <tr>
+                        <td style="vertical-align:top;padding:0;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                  style="border-collapse:collapse;border-spacing:0px;">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:35px;"><a
+                                          href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV1w3qrsKgDbx9RBS5bugHYPNOsCq0GoAblhf1_78sssCX&amp;c=7EKibOF-ZZHjknNbHOXuxA"
+                                          target="_blank" style="text-decoration: none; color: white;"><img alt="Linkdn"
+                                            height="auto" src="https://imgshare.io/images/2019/07/16/ico-linkdn.png"
+                                            style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;"
+                                            width="35"></a></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!--[if mso | IE]></td><td style="vertical-align:top;width:128px;" ><![endif]-->
+                <div class="mj-column-per-20 outlook-group-fix"
+                  style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:20%;">
+                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                    <tbody>
+                      <tr>
+                        <td style="vertical-align:top;padding:0;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <tr>
+                              <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                                <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+                                  style="border-collapse:collapse;border-spacing:0px;">
+                                  <tbody>
+                                    <tr>
+                                      <td style="width:35px;"><a
+                                          href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV153B5d7aSU7PaGeq9AfsPqSsD-BGEeseZv23s8bTVJQ2&amp;c=7EKibOF-ZZHjknNbHOXuxA"
+                                          target="_blank" style="text-decoration: none; color: white;"><img alt="Blog"
+                                            height="auto" src="https://imgshare.io/images/2019/07/16/ico-blog.png"
+                                            style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;"
+                                            width="35"></a></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!--[if mso | IE]></td></tr></table><![endif]-->
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:640px;" width="640" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#004990;background-color:#004990;Margin:0px auto;max-width:640px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="background:#004990;background-color:#004990;width:100%;">
+        <tbody>
+          <tr>
+            <td style="direction:ltr;font-size:0px;padding:30px;text-align:center;vertical-align:top;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:580px;" ><![endif]-->
+              <div class="mj-column-per-100 outlook-group-fix"
+                style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align:top;padding:0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                          <tr>
+                            <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
+                              <div
+                                style="font-family:&quot;Trebuchet MS&quot;, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, &quot;Lucida Sans&quot;, Tahoma, sans-serif;font-size:12px;line-height:1.5em;text-align:center;color:#ffffff;">
+                                Port gratuit si commande supérieure à 600€ HT, pour une seule adresse de livraison en
+                                France continentale, à l’exception des articles mentionnés port en sus dans notre
+                                catalogue. Offre réservée aux professionnels. Conformément à la loi n° 78 - 77 du 6
+                                janvier 1978, vous disposez à tout moment d’un droit d’accès, de rectification, et
+                                d’opposition aux données vous concernant.<p style="margin:5px">Pour cela, il vous suffit
+                                  d’écrire à SIGNALS - 16 avenue Bernard Moitessier - ZI des 4 Chevaliers - 17187
+                                  PERIGNY Cedex ou de cliquer <a href="#"
+                                    style="color: inherit; text-decoration: underline;">sur ce lien.</a></p>
+                                <p style="margin-top:10px;margin-bottom:0px">Pour vous désabonner de nos emails cliquez
+                                  <a href="#" style="color: inherit; text-decoration: underline;">sur ce lien.</a></p>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--[if mso | IE]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--[if mso | IE]></td></tr></table><![endif]-->
+  </div>
+</body>
+
+</html>

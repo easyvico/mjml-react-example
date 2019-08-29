@@ -19,14 +19,15 @@ import {
   MjmlNavbar
 } from 'mjml-react';
 
-import { Head } from '../components/Head';
-import { Footer } from '../components/Footer';
-import { BlocImageText} from '../components/BlocImageTexte';
-import { VisuelText } from '../components/VisuelText';
-import { TextIntro } from '../components/TextIntro';
-import { Divider } from '../components/Divider';
-import { BlocHeader } from '../components/BlocHeader';
-import { Banniere } from '../components/Banniere';
+import { Head } from '../../components/Head';
+import { Footer } from '../../components/Footer';
+import { BlocImageText} from '../../components/BlocImageTexte';
+import { VisuelText } from '../../components/VisuelText';
+import { TextIntro } from '../../components/TextIntro';
+import { Divider } from '../../components/Divider';
+import { BlocHeader } from '../../components/BlocHeader';
+import { Banniere } from '../../components/Banniere';
+import { LogoTheme } from '../../components/LogoTheme';
 
 
 const style = {
@@ -47,7 +48,9 @@ const style = {
   color4: '#004990',
   color5: '#cccccc',
   color6: '#F8F8F8',
-  color7: '#707070'
+  color7: '#707070',
+  color8: '#d65a2b',
+  color9: '#119c92'
 };
 
 export const generate = () => {
@@ -60,6 +63,10 @@ export const generate = () => {
           color7={style.color7}
           color={style.color0}
           color5={style.color5}
+        />
+        <LogoTheme
+          color={style.color0}
+          src='https://imgshare.io/images/2019/08/27/special-access.png'
         />
         <VisuelText
           color={style.color0}
@@ -75,7 +82,7 @@ export const generate = () => {
         <Divider
           padding='0px 20px 10px'
           padding0='0px'
-          border={style.color5}
+          border={style.color9}
           background={style.color0}
         />
 
@@ -113,7 +120,6 @@ export const generate = () => {
             color2={style.color2}
           />
         </MjmlSection>
-
         <Banniere
           titre='Lorem psum dolor sit amet'
           texte='Consultez notre flyer virtuel aménagement extérieur '
@@ -123,9 +129,8 @@ export const generate = () => {
           color2={style.color2}
           color4={style.color4}
         />
-
         <Footer
-          colorDivider={style.color4}
+          colorDivider={style.color9}
           color4={style.color4}
 		      color={style.color0}
           color2={style.color2}

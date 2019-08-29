@@ -22,14 +22,14 @@ import {
   MjmlNavbar
 } from 'mjml-react';
 
-import { Head } from '../components/Head';
-import { Footer } from '../components/Footer';
-import { BlocTextImageHoriz } from '../components/BlocTextImageHoriz';
-import { TextIntro } from '../components/TextIntro';
-import { Divider } from '../components/Divider';
-import { BlocHeader } from '../components/BlocHeader';
-import { Banniere } from '../components/Banniere';
-import { LogoTheme } from '../components/LogoTheme';
+import { Head } from '../../components/Head';
+import { Footer } from '../../components/Footer';
+import { BlocTextImageHoriz } from '../../components/BlocTextImageHoriz';
+import { TextIntro } from '../../components/TextIntro';
+import { Divider } from '../../components/Divider';
+import { BlocHeader } from '../../components/BlocHeader';
+import { Banniere } from '../../components/Banniere';
+import { LogoTheme } from '../../components/LogoTheme';
 
 const style = {
   tiret: {
@@ -51,8 +51,7 @@ const style = {
   color5: '#cccccc',
   color6: '#F8F8F8',
   color7: '#707070',
-  color8: '#d65a2b',
-  color9: '#119c92'
+  color8: '#d65a2b'
 };
 
 export const generate = () => {
@@ -69,7 +68,7 @@ export const generate = () => {
         />
         <LogoTheme
           color={style.color0}
-          src='https://imgshare.io/images/2019/08/27/special-access.png'
+          src='https://imgshare.io/images/2019/08/27/sol-entrepot.png'
         />
         <TextIntro
           fontsize='18px'
@@ -82,7 +81,7 @@ export const generate = () => {
         <Divider
           padding='10px 20px 20px'
           padding0='0px'
-          border={style.color9}
+          border={style.color8}
           background={style.color0}
         />
         <BlocTextImageHoriz
@@ -97,7 +96,7 @@ export const generate = () => {
         <Divider
           padding='10px 20px 20px'
           padding0='0px'
-          border={style.color9}
+          border={style.color8}
           background={style.color0}
         />
         <BlocTextImageHoriz
@@ -113,7 +112,7 @@ export const generate = () => {
         <Divider
           padding='10px 20px 20px'
           padding0='0px'
-          border={style.color9}
+          border={style.color8}
           background={style.color0}
         />
         <BlocTextImageHoriz
@@ -135,7 +134,7 @@ export const generate = () => {
           color4={style.color4}
         />
         <Footer
-          colorDivider={style.color9}
+          colorDivider={style.color8}
           color4={style.color4}
 		      color={style.color0}
           color2={style.color2}
