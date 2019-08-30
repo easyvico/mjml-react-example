@@ -69,6 +69,7 @@ export const generate = () => {
         />
         <VisuelText
           color={style.color0}
+          titre='Titre cat entrepôt - image 640X340'
         />      
         <TextIntro
           fontsize='18px'
@@ -76,7 +77,7 @@ export const generate = () => {
           color={style.color0}
           paddingSection='10px 20px 10px'
           civilite='[EMV FIELD]CIVILITE[EMV /FIELD] [EMV FIELD]NOM_CONTACT[EMV /FIELD]'
-          texte='Lorem psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.'
+          texte='Texte descriptif de l&rsquo;email entrepôt. Lorem psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         />
         <Divider
           padding='0px 20px 10px'
@@ -87,7 +88,7 @@ export const generate = () => {
 
         <MjmlSection key="first" padding='0 10px' backgroundColor={style.color0}>
           <BlocImageText
-            titre="Transport des matières dangereuse"
+            titre="Titre de la catégorie 1 - image 290X290"
             lien="> En savoir plus"
             color={style.color0}
             color1={style.color1}
@@ -95,7 +96,7 @@ export const generate = () => {
             color3={style.color3}
           />
           <BlocImageText
-            titre="Signalisation pour les véhicules"
+            titre="Titre de la catégorie 2 - image 290X290"
             lien="> En savoir plus"
             color={style.color0}
             color1={style.color1}
@@ -104,7 +105,7 @@ export const generate = () => {
         </MjmlSection>
         <MjmlSection key="first" padding='0 10px 20px 10px' backgroundColor={style.color0}>
           <BlocImageText
-            titre="&Eacute;quipements pour véhicules"
+            titre="Titre de la catégorie 3 - image 290X290"
             lien="> En savoir plus"
             color={style.color0}
             color1={style.color1}
@@ -112,7 +113,7 @@ export const generate = () => {
             color3={style.color3}
           />
           <BlocImageText
-            titre="Emballage"
+            titre="Titre de la catégorie 4 - image 290X290"
             lien="> En savoir plus"
             color={style.color0}
             color1={style.color1}
@@ -120,8 +121,8 @@ export const generate = () => {
           />
         </MjmlSection>
         <Banniere
-          titre='Lorem psum dolor sit amet'
-          texte='Consultez notre flyer virtuel aménagement extérieur '
+          titre='Titre de la bannière'
+          texte='Texte bannière - taille image max 400X150'
           lien="> Cliquez ici"
           color={style.color0}
           color1={style.color1}

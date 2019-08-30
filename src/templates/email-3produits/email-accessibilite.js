@@ -77,7 +77,7 @@ export const generate = () => {
           color={style.color0}
           padding='0px'
           paddingSection='10px 20px'
-          texte='Titre de l&rsquo;email solutions entrepôt'
+          texte='Titre de l&rsquo;email spécial accessibilité - Taille des images 290X290'
         />
         <Divider
           padding='10px 20px 20px'
@@ -86,7 +86,7 @@ export const generate = () => {
           background={style.color0}
         />
         <BlocTextImageHoriz
-          titre='Titre du produit numéro un ®'
+          titre='Titre du produit numéro 1 - image 290X290'
           texte='Texte descriptif du produit numéro un. Lorem ipsum dolor sit amet.'
           picto='https://imgshare.io/images/2019/07/18/ico-search.png'
           color1={style.color1}
@@ -101,7 +101,7 @@ export const generate = () => {
           background={style.color0}
         />
         <BlocTextImageHoriz
-          titre='Titre du produit numéro deux ®'
+          titre='Titre du produit numéro 2 - image 290X290'
           texte='Texte descriptif du produit numéro deux. Lorem ipsum dolor sit amet.'
           picto='https://imgshare.io/images/2019/07/18/ico-search.png'
           color1={style.color1}
@@ -117,7 +117,7 @@ export const generate = () => {
           background={style.color0}
         />
         <BlocTextImageHoriz
-          titre='Titre du produit numéro trois ®'
+          titre='Titre du produit numéro 3 - image 290X290'
           texte='Texte descriptif du produit numéro trois. Lorem ipsum dolor sit amet.'
           picto='https://imgshare.io/images/2019/07/18/ico-search.png'
           color1={style.color1}
@@ -127,7 +127,7 @@ export const generate = () => {
         />
         <Banniere
           titre='Titre de la bannière'
-          texte='Texte descriptif de la bannière lorem ipsum'
+          texte='Texte bannière - taille image max 400X150'
           lien="> Cliquez ici"
           color={style.color0}
           color1={style.color1}

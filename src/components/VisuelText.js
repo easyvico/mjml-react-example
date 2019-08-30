@@ -18,10 +18,10 @@ import {
 export const VisuelText = (props) => ([
   <MjmlHero
     mode="fixed-height"
-    backgroundWidth="600px"
-    backgroundHeight="320px"
+    backgroundWidth="640px"
+    backgroundHeight="340px"
     backgroundUrl="https://imgshare.io/images/2019/07/12/fotolia-176119722-subscription-monthly-m.jpg"
-    padding="150px 0px"
+    padding="132px 0px"
     width="100%"
   >
     <MjmlText
@@ -30,7 +30,7 @@ export const VisuelText = (props) => ([
       color={props.color}
       textTransform='uppercase'
       letterSpacing={8}>
-      sécurité en transport
+      {props.titre}
     </MjmlText>
   </MjmlHero>
 ]);

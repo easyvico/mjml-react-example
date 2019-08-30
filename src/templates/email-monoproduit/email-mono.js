@@ -68,7 +68,7 @@ export const generate = () => {
           color={style.color0}
           padding='0px'
           paddingSection='10px 20px'
-          texte='Titre de la page du monoproduit'
+          texte='Titre de la page du monoproduit - Largeur image 600px'
         />
         <BlocTextImageVerti
           titre='Titre du produit lorem ipsum dolor sit amet'
@@ -81,7 +81,7 @@ export const generate = () => {
         />
         <Banniere
           titre='Titre de la bannière'
-          texte='Texte descriptif de la bannière lorem ipsum'
+          texte='Texte bannière - taille image max 400X150'
           lien="> Cliquez ici"
           color={style.color0}
           color1={style.color1}
