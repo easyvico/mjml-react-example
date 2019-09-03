@@ -31,18 +31,21 @@ export const Footer = (props) => ([
 			lien='https://www.signals.fr/cms/paiement.html?memberid=29894357930'
 			picto='https://imgshare.io/images/2019/07/16/ico-creditcard.png'
 			titre='Paiement sécurisé par CB'
+			image='lien image paiement'
 			color={props.color4}
 		/>
 		<PictoText
 			lien='https://www.signals.fr/contacts?memberid=29894357930'
 			picto='https://imgshare.io/images/2019/07/16/ico-headphone.png'
 			titre='Du lundi au vendredi 8h-18h'
+			image='lien image contact'
 			color={props.color4}
 		/>
 		<PictoText
 			lien='https://www.signals.fr/cms/livraison.html?memberid=29894357930'
 			picto='https://imgshare.io/images/2019/07/16/ico-rocket.png'
 			titre='Livraison gratuite sous 24 à 48h'
+			image='lien image livraison'
 			color={props.color4}
 		/>
 	</MjmlSection>,
@@ -72,7 +75,7 @@ export const Footer = (props) => ([
 		<MjmlGroup>
 			<MjmlColumn>
 				<MjmlImage
-				alt="Facebook"
+				alt="lien image Facebook"
 				href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV15lmpKODlvF8x0SpBsIqb57vgZbb58jzNmpNdYh7HUfJ&c=7EKibOF-ZZHjknNbHOXuxA"
 				width={35}
 				src="https://imgshare.io/images/2019/07/16/ico-facebook.png">
@@ -80,7 +83,7 @@ export const Footer = (props) => ([
 			</MjmlColumn>
 			<MjmlColumn>
 				<MjmlImage
-				alt="Youtube"
+				alt="lien image Youtube"
 				href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV11voj59nJQWFrbVBfoVbJXJ9DtBGcc_Btv7aJKQ7mdk2&c=7EKibOF-ZZHjknNbHOXuxA"
 				width={35}
 				src="https://imgshare.io/images/2019/07/16/ico-youtube.png">
@@ -88,7 +91,7 @@ export const Footer = (props) => ([
 			</MjmlColumn>
 			<MjmlColumn>
 				<MjmlImage
-				alt="Twitter"
+				alt="lien image Twitter"
 				href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV18BrHJan_8DvKbAIAwNd_RykC6f4p6FDLRMSEZNhTAgD&c=7EKibOF-ZZHjknNbHOXuxA"
 				width={35}
 				src="https://imgshare.io/images/2019/07/16/ico-twitter.png">
@@ -96,7 +99,7 @@ export const Footer = (props) => ([
 			</MjmlColumn>
 			<MjmlColumn>
 				<MjmlImage
-				alt="Linkdn"
+				alt="lien image Linkdn"
 				href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV1w3qrsKgDbx9RBS5bugHYPNOsCq0GoAblhf1_78sssCX&c=7EKibOF-ZZHjknNbHOXuxA"
 				width={35}
 				src="https://imgshare.io/images/2019/07/16/ico-linkdn.png">
@@ -104,7 +107,7 @@ export const Footer = (props) => ([
 			</MjmlColumn>
 			<MjmlColumn>
 				<MjmlImage
-				alt="Blog"
+				alt="lien image Blog"
 				href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV153B5d7aSU7PaGeq9AfsPqSsD-BGEeseZv23s8bTVJQ2&c=7EKibOF-ZZHjknNbHOXuxA"
 				width={35}
 				src="https://imgshare.io/images/2019/07/16/ico-blog.png">
@@ -112,7 +115,9 @@ export const Footer = (props) => ([
 			</MjmlColumn>
 		</MjmlGroup>
 	</MjmlSection>,
-	<Mentions 
+	<Mentions
+		lienContact='lien contact'
+		lienDesabonner='lien désabonner'
 		color={props.color}
 		color4={props.color4}
   />

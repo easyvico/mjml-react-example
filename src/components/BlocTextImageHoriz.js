@@ -19,7 +19,7 @@ import { TextDescriptif } from './TextDescriptif';
 export const BlocTextImageHoriz = (props) => ([
   <MjmlSection key="first" backgroundColor={props.color} padding={props.padding} direction={props.direction}>
     <MjmlColumn padding={10} >
-      <MjmlImage fluid-on-mobile='true' width={290} src="https://picsum.photos/400" alt='image'/>
+      <MjmlImage fluid-on-mobile='true' width={290} src="https://picsum.photos/400" alt={props.image} href="http://www.google.fr" />
     </MjmlColumn>
     <MjmlColumn padding={10}>
       <MjmlText
@@ -30,13 +30,16 @@ export const BlocTextImageHoriz = (props) => ([
         paddingBottom={5}
         lineHeight='1em'
         fontWeight='bold'>
-        <a className="font-trebuchet" href='http://www.google.fr' style={{color: 'inherit', textDecoration:'none'}} alt='Titre article'>{props.titre}</a>
+        <a className="font-trebuchet" href='http://www.google.fr' style={{color: 'inherit', textDecoration:'none'}} title={props.lienTitre}>{props.titre}</a>
       </MjmlText>
       <MjmlText padding='15px 0'>
-        <img href={props.lien} src={props.picto} alt='picto loupe' style={{paddingRight:'15px', width:'25px'}}/>
-        <span style={props.verdana}>Nouveau</span>
+        <a href='http://www.google.fr' style={{color: 'inherit', textDecoration:'none'}} title={props.lienLoupeNouveau}>
+          <img src={props.picto} alt={props.imageLoupe} style={{paddingRight:'15px', width:'25px'}}/>
+          <span style={props.verdana}>Nouveau</span>
+        </a>
       </MjmlText>
       <TextDescriptif
+        lienTexte={props.lienTexte}
         fontsize='18px'
         texte={props.texte}
         align='left'

@@ -19,7 +19,7 @@ import { TextDescriptif } from './TextDescriptif';
 export const BlocTextImageVerti = (props) => ([
   <MjmlSection key="first" backgroundColor={props.color} padding={props.padding} direction={props.direction}>
     <MjmlColumn>
-      <MjmlImage fluid-on-mobile='true' width={600} src="https://picsum.photos/600" alt='image'/>
+      <MjmlImage fluid-on-mobile='true' width={600} src="https://picsum.photos/600" alt={props.image}/>
       <MjmlText
         color={props.color1}
         fontSize='20px'
@@ -30,20 +30,21 @@ export const BlocTextImageVerti = (props) => ([
         paddingBottom={5}
         lineHeight='1em'
         fontWeight='bold'>
-        <a className="font-trebuchet" href='http://www.google.fr' style={{color: 'inherit', textDecoration:'none'}} alt='Titre article'>{props.titre}</a>
+        <a className="font-trebuchet" href='http://www.google.fr' style={{color: 'inherit', textDecoration:'none'}} title={props.lienTitre}>{props.titre}</a>
       </MjmlText>
       <MjmlText padding='8px 0' align='center'>
-        <a href='http://www.google.fr'>
+        <a href='http://www.google.fr' title={props.lienLoupeNouveau}>
           <img 
             href={props.lien}
             src={props.picto}
-            alt='picto loupe'
+            alt={props.imageLoupe}
             style={{paddingRight:'15px', width:'25px'}}
           />        
           <span style={props.verdana}>Nouveau</span>
         </a>
       </MjmlText>
       <TextDescriptif
+        lienTexte={props.lienTexte}
         fontsize='18px'
         texte={props.texte}
         align='center'

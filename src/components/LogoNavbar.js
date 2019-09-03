@@ -16,7 +16,7 @@ export const LogoNavBar = (props) => ([
       <MjmlImage
         href='http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV18Z8sAMKbxtsGOFu1jSw_l_lLIuUrdviHd6nqDRHfRLm&c=7EKibOF-ZZHjknNbHOXuxA' 
         src='https://imgshare.io/images/2019/06/25/Signals-La-Rochelle-anime.gif'
-        alt='logo'
+        alt='lien logo signals'
         width={220} />
     </MjmlColumn>
     <MjmlColumn 
@@ -34,6 +34,7 @@ export const LogoNavBar = (props) => ([
           textTransform='lowcase'
           padding="0px 10px"
           href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV1_sfb8iQDNBMjlgEfLJ8n8K0WXcmkGwsaBoh2lR9jxsL&c=7EKibOF-ZZHjknNbHOXuxA"
+          title='lien signalisation de sécurité'
           color={props.color5}>
         Signalisation de sécurité
         </MjmlNavbarLink>
@@ -43,6 +44,7 @@ export const LogoNavBar = (props) => ([
           textTransform='lowcase'
           padding="0px 10px"
           href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV1weZp4poInSbOKXmIQJEDVf3s4BCR12RaYyIi3i7DKhp&c=7EKibOF-ZZHjknNbHOXuxA"
+          title='Protection du site'
           color={props.color5}>
         Protection du site
         </MjmlNavbarLink>
@@ -52,6 +54,7 @@ export const LogoNavBar = (props) => ([
           textTransform='lowcase'
           padding="0px 10px"
           href="http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV1xQvTiNSF60hcjyKwXehR9A591qoJjzFxm0cC3G3D9q7&c=7EKibOF-ZZHjknNbHOXuxA"
+          title='Tous les produits'
           color={props.color5}>
         Tous les produits
         </MjmlNavbarLink>

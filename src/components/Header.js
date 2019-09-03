@@ -19,7 +19,7 @@ export const Header = (props) => ([
             color={props.color4}
             align='center'
             padding='0'>
-            <a href='./email.html' style={{color: 'inherit'}}>Lorem ipsum lo adipiscing elit, sed do eiusmod tempor incididunt</a>
+            <a title='lien pre-header' href='http://p7tre.emv3.com/HP?b=xdJfnzCy2xox9yXztpvbzgxAVGjWFvisqX2F9i6fqtM-DC9WcccfWBoziDq_ta_e&c=vNOuENFv8XYq5hWmI3ohHw' style={{color: 'inherit'}}>Pre-header lorem ipsum lo adipiscing elit, sed do </a>
           </MjmlText>
         </MjmlColumn>
       </MjmlSection>,
@@ -34,7 +34,7 @@ export const Header = (props) => ([
             color={props.color7}
             align='center'
             padding='0'>
-            <a href='./email.html' style={{color: 'inherit'}}>Version en ligne</a>
+            <a title='lien version en ligne' href='http://p7tre.emv3.com/HM?b=xdJfnzCy2xox9yXztpvbzuMPEpxroP1sf71Pw_OCffvLZTvQb7-YQ70r-YrR8vVC&c=vNOuENFv8XYq5hWmI3ohHw' style={{color: 'inherit'}}>Version en ligne</a>
           </MjmlText>
         </MjmlColumn>
       </MjmlSection>

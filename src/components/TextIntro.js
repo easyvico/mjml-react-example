@@ -26,7 +26,7 @@ export const TextIntro = (props) => ([
         padding={props.padding}
       >
       <span style={{display: 'block'}}>
-        <a href='#' style={{color: 'inherit', textDecoration:'none'}}>{props.civilite}</a>
+        {props.civilite}
       </span>
       {props.texte}
       </MjmlText>

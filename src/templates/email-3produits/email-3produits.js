@@ -78,9 +78,15 @@ export const generate = () => {
           background={style.color0}
         />
         <BlocTextImageHoriz
-          titre='Titre du produit numéro 1 - image 290X290'
+          titre='Titre du produit numéro 1 -'
+          lien='https://www.google.fr/'
           texte='Texte descriptif du produit numéro un. Lorem ipsum dolor sit amet.'
           picto='https://imgshare.io/images/2019/07/18/ico-search.png'
+          lienTexte='lien texte produit 1'
+          lienTitre='lien titre produit 1'
+          lienLoupeNouveau='lien loupe nouveau 1'
+          image="lien image 1 - taille 290X290"
+          imageLoupe='image loupe'
           color1={style.color1}
           color={style.color0}
           verdana={style.fontVerdana}
@@ -93,9 +99,15 @@ export const generate = () => {
           background={style.color0}
         />
         <BlocTextImageHoriz
-          titre='Titre du produit numéro 2 - image 290X290'
+          titre='Titre du produit numéro 2 -'
+          lien='https://www.google.fr/'
           texte='Texte descriptif du produit numéro deux. Lorem ipsum dolor sit amet.'
           picto='https://imgshare.io/images/2019/07/18/ico-search.png'
+          lienTexte='lien texte produit 2'
+          lienTitre='lien titre produit 2'
+          lienLoupeNouveau='lien loupe nouveau 2'
+          image="lien image 2 - taille 290X290"
+          imageLoupe='image loupe'
           color1={style.color1}
           color={style.color0}
           verdana={style.fontVerdana}
@@ -109,18 +121,27 @@ export const generate = () => {
           background={style.color0}
         />
         <BlocTextImageHoriz
-          titre='Titre du produit numéro 3 - image 290X290'
+          lien='https://www.google.fr/'
+          titre='Titre du produit numéro 3 -'
           texte='Texte descriptif du produit numéro trois. Lorem ipsum dolor sit amet.'
           picto='https://imgshare.io/images/2019/07/18/ico-search.png'
+          lienTexte='lien texte produit 3'
+          lienTitre='lien titre produit 3'
+          lienLoupeNouveau='lien loupe nouveau 3'
+          image="lien image 3 - taille 290X290"
+          imageLoupe='image loupe'
           color1={style.color1}
           color={style.color0}
           padding='0px 10px 20px 10px'
           verdana={style.fontVerdana}
         />
         <Banniere
-          titre='Titre de la bannière'
+          titre='Titre bannière'
+          lienTitre='lien titre bannière'
           texte='Texte bannière - taille image max 400X150'
+          lienTexte='lien texte bannière'
           lien="> Cliquez ici"
+          lienCliquezIci='lien cliquez ici bannière'
           color={style.color0}
           color1={style.color1}
           color2={style.color2}

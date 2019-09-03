@@ -67,6 +67,7 @@ export const generate = () => {
         <LogoTheme
           color={style.color0}
           src='https://imgshare.io/images/2019/08/27/sol-entrepot.png'
+          image='lien image entrepot'
         />
         <TextIntro
           fontsize='24px'
@@ -80,15 +81,23 @@ export const generate = () => {
           titre='Titre du produit lorem ipsum dolor sit amet'
           texte='Texte descriptif du produit lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
           picto='https://imgshare.io/images/2019/07/18/ico-search.png'
+          image="lien image monoproduit - taille 600X600"
+          lienTitre='lien titre produit'
+          imageLoupe='image loupe'
+          lienLoupeNouveau='lien loupe nouveau'
+          lienTexte='lien texte produit'
           color1={style.color1}
           color={style.color0}
           verdana={style.fontVerdana}
           padding='10px 20px 10px 20px'
         />
         <Banniere
-          titre='Titre de la bannière'
+          titre='Titre bannière'
+          lienTitre='lien titre bannière'
           texte='Texte bannière - taille image max 400X150'
+          lienTexte='lien texte bannière'
           lien="> Cliquez ici"
+          lienCliquezIci='lien cliquez ici bannière'
           color={style.color0}
           color1={style.color1}
           color2={style.color2}

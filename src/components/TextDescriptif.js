@@ -17,8 +17,12 @@ export const TextDescriptif = (props) => ([
     fontSize={props.fontsize}
     letterSpacing='1px'
     align={props.align}
-    height={props.height}
-  >
-  {props.texte}
+    height={props.height}>
+    <a title={props.lienTexte}
+      href='http://www.google.fr'
+      style={{color: 'inherit', textDecoration:'none'}}
+      alt='Titre article'>
+      {props.texte}
+    </a>
   </MjmlText>
 ]);

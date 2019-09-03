@@ -67,18 +67,19 @@ export const generate = () => {
         <LogoTheme
           color={style.color0}
           src='https://imgshare.io/images/2019/08/27/special-access.png'
+          image='image spécial accessibilité'
         />
         <VisuelText
           color={style.color0}
-          titre='Titre cat accessibilité - image 640X340'
-        />      
+          titre='Titre catégorie - image 640X340'
+        />     
         <TextIntro
           fontsize='18px'
           align='center'
           color={style.color0}
           paddingSection='10px 20px 10px'
           civilite='[EMV FIELD]CIVILITE[EMV /FIELD] [EMV FIELD]NOM_CONTACT[EMV /FIELD]'
-          texte='Texte descriptif de l&rsquo;email accessibilité. Lorem psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+          texte='Texte descriptif de l&rsquo;email catégorie. Lorem psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         />
         <Divider
           padding='0px 20px 10px'
@@ -87,9 +88,10 @@ export const generate = () => {
           background={style.color0}
         />
 
-<MjmlSection key="first" padding='0 10px' backgroundColor={style.color0}>
+        <MjmlSection key="first" padding='0 10px' backgroundColor={style.color0}>
           <BlocImageText
-            titre="Titre de la catégorie 1 - image 290X290"
+            image="lien image 1 - taille 290X290"
+            titre="Titre 1 catégorie"
             lien="> En savoir plus"
             color={style.color0}
             color1={style.color1}
@@ -97,7 +99,8 @@ export const generate = () => {
             color3={style.color3}
           />
           <BlocImageText
-            titre="Titre de la catégorie 2 - image 290X290"
+            image="lien image 2 - taille 290X290"
+            titre="Titre 2 catégorie"
             lien="> En savoir plus"
             color={style.color0}
             color1={style.color1}
@@ -106,7 +109,8 @@ export const generate = () => {
         </MjmlSection>
         <MjmlSection key="first" padding='0 10px 20px 10px' backgroundColor={style.color0}>
           <BlocImageText
-            titre="Titre de la catégorie 3 - image 290X290"
+            image="lien image 3 - taille 290X290"
+            titre="Titre 3 catégorie"
             lien="> En savoir plus"
             color={style.color0}
             color1={style.color1}
@@ -114,15 +118,17 @@ export const generate = () => {
             color3={style.color3}
           />
           <BlocImageText
-            titre="Titre de la catégorie 4 - image 290X290"
+            image="lien image 4 - taille 290X290"
+            titre="Titre 4 catégorie"
             lien="> En savoir plus"
             color={style.color0}
             color1={style.color1}
             color2={style.color2}
           />
         </MjmlSection>
+
         <Banniere
-          titre='Titre de la bannière'
+          titre='Titre bannière'
           texte='Texte bannière - taille image max 400X150'
           lien="> Cliquez ici"
           color={style.color0}
@@ -130,6 +136,7 @@ export const generate = () => {
           color2={style.color2}
           color4={style.color4}
         />
+
         <Footer
           colorDivider={style.color9}
           color4={style.color4}
