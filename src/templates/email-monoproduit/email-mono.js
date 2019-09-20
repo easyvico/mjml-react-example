@@ -63,44 +63,41 @@ export const generate = () => {
           color5={style.color5}
         />
         <TextIntro
+          lien='https://www.lienTexte.fr?memberid=[EMV FIELD]MEMBER_ID[EMV /FIELD]'
           fontsize='24px'
           align='center'
           color={style.color0}
           padding='0px'
           paddingSection='10px 20px'
-          texte='Titre de la page du monoproduit - Largeur image 600px'
+          texte='Titre email monoproduit - Largeur img 600px'
         />
         <BlocTextImageVerti
-          titre='Titre du produit lorem ipsum dolor sit amet'
-          texte='Texte descriptif du produit lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
-          picto='https://imgshare.io/images/2019/07/18/ico-search.png'
-          image="lien image monoproduit - taille 600X600"
-          lienTitre='lien titre produit'
-          imageLoupe='image loupe'
-          lienLoupeNouveau='lien loupe nouveau'
-          lienTexte='lien texte produit'
+          lien='https://www.lien1.fr/'
+          titre='Titre monoproduit'
+          texte='Texte monoproduit, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
+          picto='http://p7tre.emv3.com/IL/7/2/2/1101071722/2027971645.png'
+          image="image monoproduit - taille 600X600"
+          imageLoupe='loupe'
           color1={style.color1}
           color={style.color0}
+          background={style.color0}
           verdana={style.fontVerdana}
           padding='10px 20px 10px 20px'
         />
         <Banniere
           titre='Titre bannière'
-          lienTitre='lien titre bannière'
-          texte='Texte bannière - taille image max 400X150'
-          lienTexte='lien texte bannière'
+          texte='Texte bannière - img min 320X120 / max 400X150'
           lien="> Cliquez ici"
-          lienCliquezIci='lien cliquez ici bannière'
           color={style.color0}
           color1={style.color1}
           color2={style.color2}
-          color4={style.color4}
         />
         <Footer
           colorDivider={style.color4}
           color4={style.color4}
 		      color={style.color0}
           color2={style.color2}
+          background={style.color0}
         />
       </MjmlBody>
     </Mjml>

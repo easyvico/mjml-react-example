@@ -18,10 +18,9 @@ export const TextDescriptif = (props) => ([
     letterSpacing='1px'
     align={props.align}
     height={props.height}>
-    <a title={props.lienTexte}
-      href='http://www.google.fr'
-      style={{color: 'inherit', textDecoration:'none'}}
-      alt='Titre article'>
+    <a
+      target='_blank' href={props.lien}
+      style={{color: 'inherit', textDecoration:'none'}}>
       {props.texte}
     </a>
   </MjmlText>

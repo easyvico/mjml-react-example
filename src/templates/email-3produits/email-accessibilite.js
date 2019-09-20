@@ -27,7 +27,7 @@ import { Footer } from '../../components/Footer';
 import { BlocTextImageHoriz } from '../../components/BlocTextImageHoriz';
 import { TextIntro } from '../../components/TextIntro';
 import { Divider } from '../../components/Divider';
-import { BlocHeader } from '../../components/BlocHeader';
+import { BlocHeader2Liens } from '../../components/BlocHeader2Liens';
 import { Banniere } from '../../components/Banniere';
 import { LogoTheme } from '../../components/LogoTheme';
 
@@ -60,24 +60,26 @@ export const generate = () => {
     <Mjml>
       <Head />
       <MjmlBody width={640} backgroundColor={style.color6}>       
-        <BlocHeader
+        <BlocHeader2Liens
           color4={style.color4}
           color7={style.color7}
           color={style.color0}
           color5={style.color5}
+          declinaison='Spécial accessibilité'
         />
         <LogoTheme
           color={style.color0}
-          src='https://imgshare.io/images/2019/08/27/special-access.png'
-          image='lien image accessibilité'
+          src='http://p7tre.emv3.com/IL/7/2/2/1101071722/1202306083.png'
+          image='spécial accessibilité'
         />
         <TextIntro
+          lien='https://www.lienTexte.fr/'
           fontsize='18px'
           align='center'
           color={style.color0}
           padding='0px'
           paddingSection='10px 20px'
-          texte='Titre de l&rsquo;email 3 produits spécial accessibilité'
+          texte='Titre email 3 produits spécial accessibilité'
         />
         <Divider
           padding='10px 20px 20px'
@@ -86,17 +88,15 @@ export const generate = () => {
           background={style.color0}
         />
         <BlocTextImageHoriz
-          titre='Titre du produit numéro 1 -'
-          lien='https://www.google.fr/'
-          texte='Texte descriptif du produit numéro un. Lorem ipsum dolor sit amet.'
-          picto='https://imgshare.io/images/2019/07/18/ico-search.png'
-          lienTexte='lien texte produit 1'
-          lienTitre='lien titre produit 1'
-          lienLoupeNouveau='lien loupe nouveau 1'
-          image="lien image 1 - taille 290X290"
-          imageLoupe='image loupe'
+          titre='Titre 1 produit'
+          lien='https://www.lien1.fr/'
+          texte='Texte 1 produit. Lorem ipsum dolor sit amet.'
+          picto='http://p7tre.emv3.com/IL/7/2/2/1101071722/2027971645.png'
+          image="image 1 - taille 290X290"
+          imageLoupe='loupe'
           color1={style.color1}
           color={style.color0}
+          background={style.color0}
           verdana={style.fontVerdana}
           padding='0 10px 10px 10px'
         />
@@ -107,17 +107,15 @@ export const generate = () => {
           background={style.color0}
         />
         <BlocTextImageHoriz
-          titre='Titre du produit numéro 2 -'
-          lien='https://www.google.fr/'
-          texte='Texte descriptif du produit numéro deux. Lorem ipsum dolor sit amet.'
-          picto='https://imgshare.io/images/2019/07/18/ico-search.png'
-          lienTexte='lien texte produit 2'
-          lienTitre='lien titre produit 2'
-          lienLoupeNouveau='lien loupe nouveau 2'
-          image="lien image 2 - taille 290X290"
-          imageLoupe='image loupe'
+          titre='Titre 2 produit'
+          lien='https://www.lien2.fr/'
+          texte='Texte 2 produit. Lorem ipsum dolor sit amet.'
+          picto='http://p7tre.emv3.com/IL/7/2/2/1101071722/2027971645.png'
+          image="image 2 - taille 290X290"
+          imageLoupe='loupe'
           color1={style.color1}
           color={style.color0}
+          background={style.color0}
           verdana={style.fontVerdana}
           padding='0 10px 10px 10px'
           direction='rtl'
@@ -129,31 +127,25 @@ export const generate = () => {
           background={style.color0}
         />
         <BlocTextImageHoriz
-          lien='https://www.google.fr/'
-          titre='Titre du produit numéro 3 -'
-          texte='Texte descriptif du produit numéro trois. Lorem ipsum dolor sit amet.'
-          picto='https://imgshare.io/images/2019/07/18/ico-search.png'
-          lienTexte='lien texte produit 3'
-          lienTitre='lien titre produit 3'
-          lienLoupeNouveau='lien loupe nouveau 3'
-          image="lien image 3 - taille 290X290"
-          imageLoupe='image loupe'
+          lien='https://www.lien3.fr/'
+          titre='Titre 3 produit'
+          texte='Texte 3 produit. Lorem ipsum dolor sit amet.'
+          picto='http://p7tre.emv3.com/IL/7/2/2/1101071722/2027971645.png'
+          image="image 3 - taille 290X290"
+          imageLoupe='loupe'
           color1={style.color1}
           color={style.color0}
+          background={style.color0}
           padding='0px 10px 20px 10px'
           verdana={style.fontVerdana}
         />
         <Banniere
           titre='Titre bannière'
-          lienTitre='lien titre bannière'
-          texte='Texte bannière - taille image max 400X150'
-          lienTexte='lien texte bannière'
+          texte='Texte bannière - img min 320X120 / max 400X150'
           lien="> Cliquez ici"
-          lienCliquezIci='lien cliquez ici bannière'
           color={style.color0}
           color1={style.color1}
           color2={style.color2}
-          color4={style.color4}
         />
         <Footer
           colorDivider={style.color9}

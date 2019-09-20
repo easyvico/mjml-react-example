@@ -36,7 +36,7 @@ export const generate = () => {
         </MjmlSection>
         <MjmlSection>
           <MjmlColumn>
-            <MjmlText><a href="/">Go Back</a></MjmlText>
+            <MjmlText><a target='_blank' href="/">Go Back</a></MjmlText>
           </MjmlColumn>
         </MjmlSection>
       </MjmlBody>

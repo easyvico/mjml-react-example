@@ -19,7 +19,7 @@ import { TextDescriptif } from './TextDescriptif';
 export const BlocTextImageHoriz = (props) => ([
   <MjmlSection key="first" backgroundColor={props.color} padding={props.padding} direction={props.direction}>
     <MjmlColumn padding={10} >
-      <MjmlImage fluid-on-mobile='true' width={290} src="https://picsum.photos/400" alt={props.image} href="http://www.google.fr" />
+      <MjmlImage fluid-on-mobile='true' width={290} src="https://picsum.photos/400" alt={props.image} href={props.lien} />
     </MjmlColumn>
     <MjmlColumn padding={10}>
       <MjmlText
@@ -30,26 +30,26 @@ export const BlocTextImageHoriz = (props) => ([
         paddingBottom={5}
         lineHeight='1em'
         fontWeight='bold'>
-        <a className="font-trebuchet" href='http://www.google.fr' style={{color: 'inherit', textDecoration:'none'}} title={props.lienTitre}>{props.titre}</a>
+        <a className="font-trebuchet" target='_blank' href={props.lien} style={{color: 'inherit', textDecoration:'none'}}>{props.titre}</a>
       </MjmlText>
       <MjmlText padding='15px 0'>
-        <a href='http://www.google.fr' style={{color: 'inherit', textDecoration:'none'}} title={props.lienLoupeNouveau}>
+        <a target='_blank' href={props.lien} style={{color: 'inherit', textDecoration:'none'}}>
           <img src={props.picto} alt={props.imageLoupe} style={{paddingRight:'15px', width:'25px'}}/>
           <span style={props.verdana}>Nouveau</span>
         </a>
       </MjmlText>
       <TextDescriptif
-        lienTexte={props.lienTexte}
         fontsize='18px'
         texte={props.texte}
         align='left'
         height='125px'
+        lien={props.lien}
       />
       <Cta 
-        lien='http://p7tre.emv3.com/HP?b=jEA35O-6Y27TnJl3cvhV1wVE5p8bdPE91adlnlY84XDYsxLywEjDBdg7UYGPg_Xm&c=7EKibOF-ZZHjknNbHOXuxA'
+        lien={props.lien}
         text='voir le produit'
         borderRadius='1'
-        backgroundColor='none'
+        background={props.background}
         padding={0}
         width='100%'
       />

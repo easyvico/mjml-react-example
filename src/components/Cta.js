@@ -19,7 +19,7 @@ export const Cta = (props) => ([
       href={props.lien}
       padding={props.padding}
       font-size='15px'
-      backgroundColor='none'
+      backgroundColor={props.background}
       paddingBottom={props.paddingbottom}
       borderRadius='0'
       border='2px solid #fd3d0e'

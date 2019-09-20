@@ -25,10 +25,12 @@ export const TextIntro = (props) => ([
         align={props.align}
         padding={props.padding}
       >
-      <span style={{display: 'block'}}>
-        {props.civilite}
-      </span>
-      {props.texte}
+        <a className="font-trebuchet" target='_blank' href={props.lien} style={{color: 'inherit', textDecoration:'none'}}>
+          <span style={{display: 'block'}}>
+            {props.civilite}
+          </span>     
+          {props.texte}
+        </a>
       </MjmlText>
     </MjmlColumn>
   </MjmlSection>
